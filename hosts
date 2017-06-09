@@ -1,0 +1,2 @@
+[rdocloud]
+$IP ansible_user= ansible_ssh_pass=

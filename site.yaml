@@ -1,0 +1,7 @@
+---
+- hosts: rdocloud
+    roles:
+      - rdocloud
+- hosts: vnf
+    roles:
+      - vnf

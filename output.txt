@@ -1,0 +1,1880 @@
+  1335 1497263143.93216: starting run
+Using /etc/ansible/ansible.cfg as config file
+  1335 1497263144.01828: Loading CacheModule 'memory' from /usr/lib/python2.7/site-packages/ansible/plugins/cache/memory.py
+  1335 1497263144.03074: in VariableManager get_vars()
+  1335 1497263144.03165: done with get_vars()
+  1335 1497263144.07489: in VariableManager get_vars()
+  1335 1497263144.07507: done with get_vars()
+  1335 1497263144.07780: in VariableManager get_vars()
+  1335 1497263144.07795: done with get_vars()
+  1335 1497263144.08123: Loading CallbackModule 'default' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/default.py
+Loading callback plugin default of type stdout, v2.0 from /usr/lib/python2.7/site-packages/ansible/plugins/callback/__init__.pyc
+  1335 1497263144.08160: Loading CallbackModule 'actionable' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/actionable.py (found_in_cache=False, class_only=True)
+  1335 1497263144.08173: Loading CallbackModule 'context_demo' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/context_demo.py (found_in_cache=False, class_only=True)
+  1335 1497263144.08184: Loading CallbackModule 'debug' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/debug.py (found_in_cache=False, class_only=True)
+  1335 1497263144.08188: Loading CallbackModule 'default' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/default.py (found_in_cache=False, class_only=True)
+  1335 1497263144.08214: Loading CallbackModule 'dense' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/dense.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11210: Loading CallbackModule 'foreman' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/foreman.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11726: Loading CallbackModule 'hipchat' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/hipchat.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11748: Loading CallbackModule 'jabber' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/jabber.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11760: Loading CallbackModule 'json' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/json.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11785: Loading CallbackModule 'junit' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/junit.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11799: Loading CallbackModule 'log_plays' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/log_plays.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11823: Loading CallbackModule 'logentries' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/logentries.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11842: Loading CallbackModule 'logstash' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/logstash.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11897: Loading CallbackModule 'mail' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/mail.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11910: Loading CallbackModule 'minimal' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/minimal.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11921: Loading CallbackModule 'oneline' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/oneline.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11932: Loading CallbackModule 'osx_say' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/osx_say.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11946: Loading CallbackModule 'profile_tasks' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/profile_tasks.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11972: Loading CallbackModule 'selective' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/selective.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11983: Loading CallbackModule 'skippy' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/skippy.py (found_in_cache=False, class_only=True)
+  1335 1497263144.11998: Loading CallbackModule 'slack' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/slack.py (found_in_cache=False, class_only=True)
+  1335 1497263144.12059: Loading CallbackModule 'syslog_json' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/syslog_json.py (found_in_cache=False, class_only=True)
+  1335 1497263144.12071: Loading CallbackModule 'timer' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/timer.py (found_in_cache=False, class_only=True)
+  1335 1497263144.12082: Loading CallbackModule 'tree' from /usr/lib/python2.7/site-packages/ansible/plugins/callback/tree.py (found_in_cache=False, class_only=True)
+
+PLAYBOOK: site.yml ********************************************************************************************************************
+3 plays in site.yml
+  1335 1497263144.12098: in VariableManager get_vars()
+  1335 1497263144.12984: Loading FilterModule 'core' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/core.py
+  1335 1497263144.13827: Loading FilterModule 'ipaddr' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py
+  1335 1497263144.13849: Loading FilterModule 'json_query' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py
+  1335 1497263144.13864: Loading FilterModule 'mathstuff' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py
+  1335 1497263144.13979: Loading TestModule 'core' from /usr/lib/python2.7/site-packages/ansible/plugins/test/core.py
+  1335 1497263144.13991: Loading TestModule 'files' from /usr/lib/python2.7/site-packages/ansible/plugins/test/files.py
+  1335 1497263144.14001: Loading TestModule 'mathstuff' from /usr/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py
+  1335 1497263144.14307: done with get_vars()
+
+PLAY [rdocloud] ***********************************************************************************************************************
+skipping: no hosts matched
+  1335 1497263144.14400: in VariableManager get_vars()
+  1335 1497263144.14427: Loading FilterModule 'core' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14431: Loading FilterModule 'ipaddr' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14434: Loading FilterModule 'json_query' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14437: Loading FilterModule 'mathstuff' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14467: Loading TestModule 'core' from /usr/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14471: Loading TestModule 'files' from /usr/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14474: Loading TestModule 'mathstuff' from /usr/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14553: done with get_vars()
+  1335 1497263144.14584: in VariableManager get_vars()
+  1335 1497263144.14611: Loading FilterModule 'core' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14615: Loading FilterModule 'ipaddr' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14618: Loading FilterModule 'json_query' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14620: Loading FilterModule 'mathstuff' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14635: Loading TestModule 'core' from /usr/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14638: Loading TestModule 'files' from /usr/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14640: Loading TestModule 'mathstuff' from /usr/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+  1335 1497263144.14695: done with get_vars()
+
+PLAY [rdocloud2] **********************************************************************************************************************
+  1335 1497263144.16423: Loading StrategyModule 'linear' from /usr/lib/python2.7/site-packages/ansible/plugins/strategy/linear.py
+  1335 1497263144.16590: getting the remaining hosts for this loop
+  1335 1497263144.16596: done getting the remaining hosts for this loop
+  1335 1497263144.16600: building list of next tasks for hosts
+  1335 1497263144.16602: getting the next task for host 38.145.32.184
+  1335 1497263144.16605: done getting next task for host 38.145.32.184
+  1335 1497263144.16608:  ^ task is: TASK: Gathering Facts
+  1335 1497263144.16611:  ^ state is: HOST STATE: block=0, task=0, rescue=0, always=0, run_state=ITERATING_SETUP, fail_state=FAILED_NONE, pending_setup=True, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+  1335 1497263144.16613: done building task lists
+  1335 1497263144.16614: counting tasks in each state of execution
+  1335 1497263144.16616: done counting tasks in each state of execution:
+	num_setups: 1
+	num_tasks: 0
+	num_rescue: 0
+	num_always: 0
+  1335 1497263144.16618: advancing hosts in ITERATING_SETUP
+  1335 1497263144.16620: starting to advance hosts
+  1335 1497263144.16621: getting the next task for host 38.145.32.184
+  1335 1497263144.16624: done getting next task for host 38.145.32.184
+  1335 1497263144.16626:  ^ task is: TASK: Gathering Facts
+  1335 1497263144.16629:  ^ state is: HOST STATE: block=0, task=0, rescue=0, always=0, run_state=ITERATING_SETUP, fail_state=FAILED_NONE, pending_setup=True, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+  1335 1497263144.16630: done advancing hosts to next task
+  1335 1497263144.16955: getting variables
+  1335 1497263144.16959: in VariableManager get_vars()
+  1335 1497263144.16987: Loading FilterModule 'core' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+  1335 1497263144.16991: Loading FilterModule 'ipaddr' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+  1335 1497263144.16994: Loading FilterModule 'json_query' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+  1335 1497263144.16996: Loading FilterModule 'mathstuff' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+  1335 1497263144.17011: Loading TestModule 'core' from /usr/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+  1335 1497263144.17014: Loading TestModule 'files' from /usr/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+  1335 1497263144.17016: Loading TestModule 'mathstuff' from /usr/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+  1335 1497263144.17084: done with get_vars()
+  1335 1497263144.17093: done getting variables
+  1335 1497263144.17097: sending task start callback, copying the task so we can template it temporarily
+  1335 1497263144.17099: done copying, going to template now
+  1335 1497263144.17102: done templating
+  1335 1497263144.17104: here goes the callback...
+
+TASK [Gathering Facts] ****************************************************************************************************************
+  1335 1497263144.17110: sending task start callback
+  1335 1497263144.17113: entering _queue_task() for 38.145.32.184/setup
+  1335 1497263144.17210: worker is 1 (out of 1 available)
+  1335 1497263144.17230: exiting _queue_task() for 38.145.32.184/setup
+  1335 1497263144.17241: done queuing things up, now waiting for results queue to drain
+  1335 1497263144.17245: waiting for pending results...
+  1342 1497263144.17618: running TaskExecutor() for 38.145.32.184/TASK: Gathering Facts
+  1342 1497263144.17653: in run()
+  1342 1497263144.17686: calling self._execute()
+  1342 1497263144.18107: Loading Connection 'ssh' from /usr/lib/python2.7/site-packages/ansible/plugins/connection/ssh.py
+  1342 1497263144.18152: Loading ShellModule 'csh' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/csh.py
+  1342 1497263144.18178: Loading ShellModule 'fish' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/fish.py
+  1342 1497263144.18209: Loading ShellModule 'powershell' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/powershell.py
+  1342 1497263144.18221: Loading ShellModule 'sh' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/sh.py
+  1342 1497263144.18239: Loading ShellModule 'sh' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+  1342 1497263144.18265: Loading ActionModule 'normal' from /usr/lib/python2.7/site-packages/ansible/plugins/action/normal.py
+  1342 1497263144.18271: starting attempt loop
+  1342 1497263144.18274: running the handler
+  1342 1497263144.18296: ANSIBALLZ: Using lock for setup
+  1342 1497263144.18299: ANSIBALLZ: Acquiring lock
+  1342 1497263144.18302: ANSIBALLZ: Lock acquired: 140210524740496
+  1342 1497263144.18305: ANSIBALLZ: Creating module
+  1342 1497263144.37228: ANSIBALLZ: Writing module
+  1342 1497263144.37243: ANSIBALLZ: Renaming module
+  1342 1497263144.37247: ANSIBALLZ: Done creating module
+Using module file /usr/lib/python2.7/site-packages/ansible/modules/system/setup.py
+  1342 1497263144.37302: _low_level_execute_command(): starting
+  1342 1497263144.37307: _low_level_execute_command(): executing: /bin/sh -c 'echo ~ && sleep 0'
+<38.145.32.184> ESTABLISH SSH CONNECTION FOR USER: centos
+<38.145.32.184> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 38.145.32.184 '/bin/sh -c '"'"'echo ~ && sleep 0'"'"''
+  1342 1497263144.38289: stderr chunk (state=2):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1342 1497263144.38308: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug1: Control socket "/home/rnoriega/.ansible/cp/14928f9d28" does not exist
+debug2: resolving "38.145.32.184" port 22
+debug2: ssh_connect_direct: needpriv 0
+debug1: Connecting to 38.145.32.184 [38.145.32.184] port 22.
+debug2: fd 3 setting O_NONBLOCK
+<<<
+  1342 1497263144.64876: stderr chunk (state=3):
+>>>debug1: fd 3 clearing O_NONBLOCK
+debug1: Connection established.
+debug3: timeout: 9735 ms remain after connect
+<<<
+  1342 1497263144.64890: stderr chunk (state=3):
+>>>debug1: identity file /home/rnoriega/.ssh/id_rsa type 1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_rsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_dsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_dsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_ecdsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_ecdsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_ed25519 type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+<<<
+  1342 1497263144.64898: stderr chunk (state=3):
+>>>debug1: Local version string SSH-2.0-OpenSSH_7.2
+<<<
+  1342 1497263145.05992: stderr chunk (state=3):
+>>>debug1: Remote protocol version 2.0, remote software version OpenSSH_6.6.1
+debug1: match: OpenSSH_6.6.1 pat OpenSSH_6.6.1* compat 0x04000000
+debug2: fd 3 setting O_NONBLOCK
+debug1: Authenticating to 38.145.32.184:22 as 'centos'
+debug3: hostkeys_foreach: reading file "/home/rnoriega/.ssh/known_hosts"
+<<<
+  1342 1497263145.06006: stderr chunk (state=3):
+>>>debug3: record_hostkey: found key type ECDSA in file /home/rnoriega/.ssh/known_hosts:66
+debug3: load_hostkeys: loaded 1 keys from 38.145.32.184
+debug3: order_hostkeyalgs: prefer hostkeyalgs: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521
+<<<
+  1342 1497263145.06013: stderr chunk (state=3):
+>>>debug3: send packet: type 20
+debug1: SSH2_MSG_KEXINIT sent
+<<<
+  1342 1497263145.08010: stderr chunk (state=3):
+>>>debug3: receive packet: type 20
+debug1: SSH2_MSG_KEXINIT received
+debug2: local client KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,ext-info-c
+debug2: host key algorithms: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-ed25519,rsa-sha2-512,rsa-sha2-256,ssh-rsa
+debug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,aes192-cbc,aes256-cbc,3des-cbc
+debug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,aes192-cbc,aes256-cbc,3des-cbc
+debug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: compression ctos: zlib@openssh.com,zlib,none
+debug2: compression stoc: zlib@openssh.com,zlib,none
+debug2: languages ctos: 
+debug2: languages stoc: 
+debug2: first_kex_follows 0 
+debug2: reserved 0 
+debug2: peer server KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+debug2: host key algorithms: ssh-rsa,ecdsa-sha2-nistp256,ssh-ed25519
+debug2: ciphers ctos: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: ciphers stoc: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: MACs ctos: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: MACs stoc: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: compression ctos: none,zlib@openssh.com
+debug2: compression stoc: none,zlib@openssh.com
+debug2: languages ctos: 
+debug2: languages stoc: 
+debug2: first_kex_follows 0 
+debug2: reserved 0 
+debug1: kex: algorithm: curve25519-sha256@libssh.org
+debug1: kex: host key algorithm: ecdsa-sha2-nistp256
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: zlib@openssh.com
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: zlib@openssh.com
+debug1: kex: curve25519-sha256@libssh.org need=64 dh_need=64
+debug1: kex: curve25519-sha256@libssh.org need=64 dh_need=64
+<<<
+  1342 1497263145.08228: stderr chunk (state=3):
+>>>debug3: send packet: type 30
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+<<<
+  1342 1497263145.36773: stderr chunk (state=3):
+>>>debug3: receive packet: type 31
+debug1: Server host key: ecdsa-sha2-nistp256 SHA256:FjxO2lkDlBKOKDjT9GoKp14peY0CdLi3CvzxRo4/ggg
+debug3: hostkeys_foreach: reading file "/home/rnoriega/.ssh/known_hosts"
+debug3: record_hostkey: found key type ECDSA in file /home/rnoriega/.ssh/known_hosts:66
+debug3: load_hostkeys: loaded 1 keys from 38.145.32.184
+debug1: Host '38.145.32.184' is known and matches the ECDSA host key.
+debug1: Found key in /home/rnoriega/.ssh/known_hosts:66
+<<<
+  1342 1497263145.36974: stderr chunk (state=3):
+>>>debug3: send packet: type 21
+debug2: set_newkeys: mode 1
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug3: receive packet: type 21
+debug1: SSH2_MSG_NEWKEYS received
+debug2: set_newkeys: mode 0
+debug1: rekey after 134217728 blocks
+<<<
+  1342 1497263145.37055: stderr chunk (state=3):
+>>>debug2: key: /home/rnoriega/.ssh/id_rsa (0x5624b0cc8cb0), agent
+debug2: key: /home/rnoriega/.ssh/id_dsa ((nil))
+debug2: key: /home/rnoriega/.ssh/id_ecdsa ((nil))
+debug2: key: /home/rnoriega/.ssh/id_ed25519 ((nil))
+debug3: send packet: type 5
+<<<
+  1342 1497263145.67387: stderr chunk (state=3):
+>>>debug3: receive packet: type 6
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug3: send packet: type 50
+<<<
+  1342 1497263146.19136: stderr chunk (state=3):
+>>>debug3: receive packet: type 51
+debug1: Authentications that can continue: publickey,gssapi-keyex,gssapi-with-mic
+debug3: start over, passed a different list publickey,gssapi-keyex,gssapi-with-mic
+debug3: preferred gssapi-with-mic,gssapi-keyex,hostbased,publickey
+debug3: authmethod_lookup gssapi-with-mic
+debug3: remaining preferred: gssapi-keyex,hostbased,publickey
+debug3: authmethod_is_enabled gssapi-with-mic
+debug1: Next authentication method: gssapi-with-mic
+<<<
+  1342 1497263146.19221: stderr chunk (state=3):
+>>>debug1: Unspecified GSS failure.  Minor code may provide more information
+No Kerberos credentials available (default cache: KEYRING:persistent:1000)
+
+<<<
+  1342 1497263146.19236: stderr chunk (state=3):
+>>>debug1: Unspecified GSS failure.  Minor code may provide more information
+No Kerberos credentials available (default cache: KEYRING:persistent:1000)
+
+<<<
+  1342 1497263146.19250: stderr chunk (state=3):
+>>>debug1: Unspecified GSS failure.  Minor code may provide more information
+
+
+<<<
+  1342 1497263146.19269: stderr chunk (state=3):
+>>>debug1: Unspecified GSS failure.  Minor code may provide more information
+No Kerberos credentials available (default cache: KEYRING:persistent:1000)
+
+debug2: we did not send a packet, disable method
+debug3: authmethod_lookup gssapi-keyex
+debug3: remaining preferred: hostbased,publickey
+debug3: authmethod_is_enabled gssapi-keyex
+debug1: Next authentication method: gssapi-keyex
+debug1: No valid Key exchange context
+debug2: we did not send a packet, disable method
+debug3: authmethod_lookup publickey
+debug3: remaining preferred: ,publickey
+debug3: authmethod_is_enabled publickey
+debug1: Next authentication method: publickey
+debug1: Offering RSA public key: /home/rnoriega/.ssh/id_rsa
+debug3: send_pubkey_test
+debug3: send packet: type 50
+<<<
+  1342 1497263146.19276: stderr chunk (state=3):
+>>>debug2: we sent a publickey packet, wait for reply
+<<<
+  1342 1497263146.49309: stderr chunk (state=3):
+>>>debug3: receive packet: type 60
+debug1: Server accepts key: pkalg ssh-rsa blen 279
+debug2: input_userauth_pk_ok: fp SHA256:E+i1Hz94nKEg4bALXcFyEzG7DyCrgMMKnpI/hfThl7Y
+debug3: sign_and_send_pubkey: RSA SHA256:E+i1Hz94nKEg4bALXcFyEzG7DyCrgMMKnpI/hfThl7Y
+<<<
+  1342 1497263146.49667: stderr chunk (state=3):
+>>>debug3: send packet: type 50
+<<<
+  1342 1497263146.80028: stderr chunk (state=3):
+>>>debug3: receive packet: type 52
+debug1: Enabling compression at level 6.
+debug1: Authentication succeeded (publickey).
+Authenticated to 38.145.32.184 ([38.145.32.184]:22).
+debug1: setting up multiplex master socket
+debug3: muxserver_listen: temporary control path /home/rnoriega/.ansible/cp/14928f9d28.CBfZF3UkClwE296S
+<<<
+  1342 1497263146.80041: stderr chunk (state=3):
+>>>debug2: fd 5 setting O_NONBLOCK
+debug3: fd 5 is O_NONBLOCK
+debug3: fd 5 is O_NONBLOCK
+debug1: channel 0: new [/home/rnoriega/.ansible/cp/14928f9d28]
+debug3: muxserver_listen: mux listener channel 0 fd 5
+debug2: fd 3 setting TCP_NODELAY
+debug3: ssh_packet_set_tos: set IP_TOS 0x08
+debug1: control_persist_detach: backgrounding master process
+<<<
+  1342 1497263146.80058: stderr chunk (state=3):
+>>>debug2: control_persist_detach: background process is 1347
+debug2: fd 5 setting O_NONBLOCK
+<<<
+  1342 1497263146.80100: stderr chunk (state=3):
+>>>debug1: forking to background
+<<<
+  1342 1497263146.80120: stderr chunk (state=3):
+>>>debug1: Entering interactive session.
+debug1: pledge: id
+<<<
+  1342 1497263146.80134: stderr chunk (state=3):
+>>>debug2: set_control_persist_exit_time: schedule exit in 60 seconds
+debug1: multiplexing control connection
+debug2: fd 6 setting O_NONBLOCK
+debug3: fd 6 is O_NONBLOCK
+debug1: channel 1: new [mux-control]
+debug3: channel_post_mux_listener: new mux channel 1 fd 6
+debug3: mux_master_read_cb: channel 1: hello sent
+debug2: set_control_persist_exit_time: cancel scheduled exit
+debug3: mux_master_read_cb: channel 1 packet type 0x00000001 len 4
+debug2: process_mux_master_hello: channel 1 slave version 4
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_master_read_cb: channel 1 packet type 0x10000004 len 4
+debug2: process_mux_alive_check: channel 1: alive check
+debug3: mux_client_request_alive: done pid = 1349
+<<<
+  1342 1497263146.80143: stderr chunk (state=3):
+>>>debug3: mux_client_request_session: session request sent
+debug3: mux_master_read_cb: channel 1 packet type 0x10000002 len 124
+debug2: process_mux_new_session: channel 1: request tty 0, X 0, agent 0, subsys 0, term "screen-256color", cmd "/bin/sh -c 'echo ~ && sleep 0'", env 2
+debug3: process_mux_new_session: got fds stdin 7, stdout 8, stderr 9
+debug2: fd 8 setting O_NONBLOCK
+debug2: fd 9 setting O_NONBLOCK
+debug1: channel 2: new [client-session]
+debug2: process_mux_new_session: channel_new: 2 linked to control channel 1
+debug2: channel 2: send open
+debug3: send packet: type 90
+<<<
+  1342 1497263147.10747: stderr chunk (state=3):
+>>>debug3: receive packet: type 91
+debug2: callback start
+debug2: client_session2_setup: id 2
+debug1: Sending environment.
+debug1: Sending env XMODIFIERS = @im=ibus
+debug2: channel 2: request env confirm 0
+debug3: send packet: type 98
+debug1: Sending env LANG = en_US.UTF-8
+debug2: channel 2: request env confirm 0
+debug3: send packet: type 98
+debug1: Sending command: /bin/sh -c 'echo ~ && sleep 0'
+debug2: channel 2: request exec confirm 1
+debug3: send packet: type 98
+debug3: mux_session_confirm: sending success reply
+debug2: callback done
+debug2: channel 2: open confirm rwindow 0 rmax 32768
+<<<
+  1342 1497263147.10759: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1342 1497263147.41469: stderr chunk (state=3):
+>>>debug2: channel 2: rcvd adjust 2097152
+debug3: receive packet: type 99
+debug2: channel_input_status_confirm: type 99 id 2
+debug2: exec request accepted on channel 2
+<<<
+  1342 1497263147.41504: stdout chunk (state=3):
+>>>/home/centos
+<<<
+  1342 1497263147.41530: stderr chunk (state=3):
+>>>debug3: receive packet: type 98
+debug1: client_input_channel_req: channel 2 rtype exit-status reply 0
+debug3: mux_exit_message: channel 2: exit message, exitval 0
+debug3: receive packet: type 98
+debug1: client_input_channel_req: channel 2 rtype eow@openssh.com reply 0
+debug2: channel 2: rcvd eow
+debug2: channel 2: close_read
+debug2: channel 2: input open -> closed
+debug3: receive packet: type 96
+debug2: channel 2: rcvd eof
+debug2: channel 2: output open -> drain
+debug2: channel 2: obuf empty
+debug2: channel 2: close_write
+debug2: channel 2: output drain -> closed
+debug3: receive packet: type 97
+debug2: channel 2: rcvd close
+debug3: channel 2: will not send data after close
+<<<
+  1342 1497263147.41545: stderr chunk (state=3):
+>>>debug2: channel 2: send close
+debug3: send packet: type 97
+debug2: channel 2: is dead
+debug2: channel 2: gc: notify user
+debug3: mux_master_session_cleanup_cb: entering for channel 2
+debug2: channel 1: rcvd close
+debug2: channel 1: output open -> drain
+debug2: channel 1: close_read
+debug2: channel 1: input open -> closed
+debug2: channel 2: gc: user detached
+debug2: channel 2: is dead
+debug2: channel 2: garbage collecting
+debug1: channel 2: free: client-session, nchannels 3
+debug3: channel 2: status: The following connections are open:
+  #2 client-session (t4 r0 i3/0 o3/0 fd -1/-1 cc -1)
+
+debug2: channel 1: obuf empty
+debug2: channel 1: close_write
+debug2: channel 1: output drain -> closed
+debug2: channel 1: is dead (local)
+debug2: channel 1: gc: notify user
+debug3: mux_master_control_cleanup_cb: entering for channel 1
+debug2: channel 1: gc: user detached
+debug2: channel 1: is dead (local)
+debug2: channel 1: garbage collecting
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug1: channel 1: free: mux-control, nchannels 2
+debug3: channel 1: status: The following connections are open:
+
+debug2: Received exit status from master 0
+debug2: set_control_persist_exit_time: schedule exit in 60 seconds
+<<<
+  1342 1497263147.41600: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, '/home/centos\n', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug1: Control socket "/home/rnoriega/.ansible/cp/14928f9d28" does not exist\r\ndebug2: resolving "38.145.32.184" port 22\r\ndebug2: ssh_connect_direct: needpriv 0\r\ndebug1: Connecting to 38.145.32.184 [38.145.32.184] port 22.\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug1: fd 3 clearing O_NONBLOCK\r\ndebug1: Connection established.\r\ndebug3: timeout: 9735 ms remain after connect\r\ndebug1: identity file /home/rnoriega/.ssh/id_rsa type 1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /home/rnoriega/.ssh/id_rsa-cert type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /home/rnoriega/.ssh/id_dsa type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /home/rnoriega/.ssh/id_dsa-cert type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /home/rnoriega/.ssh/id_ecdsa type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /home/rnoriega/.ssh/id_ecdsa-cert type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /home/rnoriega/.ssh/id_ed25519 type -1\r\ndebug1: key_load_public: No such file or directory\r\ndebug1: identity file /home/rnoriega/.ssh/id_ed25519-cert type -1\r\ndebug1: Enabling compatibility mode for protocol 2.0\r\ndebug1: Local version string SSH-2.0-OpenSSH_7.2\r\ndebug1: Remote protocol version 2.0, remote software version OpenSSH_6.6.1\r\ndebug1: match: OpenSSH_6.6.1 pat OpenSSH_6.6.1* compat 0x04000000\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug1: Authenticating to 38.145.32.184:22 as \'centos\'\r\ndebug3: hostkeys_foreach: reading file "/home/rnoriega/.ssh/known_hosts"\r\ndebug3: record_hostkey: found key type ECDSA in file /home/rnoriega/.ssh/known_hosts:66\r\ndebug3: load_hostkeys: loaded 1 keys from 38.145.32.184\r\ndebug3: order_hostkeyalgs: prefer hostkeyalgs: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521\r\ndebug3: send packet: type 20\r\ndebug1: SSH2_MSG_KEXINIT sent\r\ndebug3: receive packet: type 20\r\ndebug1: SSH2_MSG_KEXINIT received\r\ndebug2: local client KEXINIT proposal\r\ndebug2: KEX algorithms: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,ext-info-c\r\ndebug2: host key algorithms: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-ed25519,rsa-sha2-512,rsa-sha2-256,ssh-rsa\r\ndebug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,aes192-cbc,aes256-cbc,3des-cbc\r\ndebug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,aes192-cbc,aes256-cbc,3des-cbc\r\ndebug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1\r\ndebug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1\r\ndebug2: compression ctos: zlib@openssh.com,zlib,none\r\ndebug2: compression stoc: zlib@openssh.com,zlib,none\r\ndebug2: languages ctos: \r\ndebug2: languages stoc: \r\ndebug2: first_kex_follows 0 \r\ndebug2: reserved 0 \r\ndebug2: peer server KEXINIT proposal\r\ndebug2: KEX algorithms: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1\r\ndebug2: host key algorithms: ssh-rsa,ecdsa-sha2-nistp256,ssh-ed25519\r\ndebug2: ciphers ctos: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se\r\ndebug2: ciphers stoc: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se\r\ndebug2: MACs ctos: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96\r\ndebug2: MACs stoc: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96\r\ndebug2: compression ctos: none,zlib@openssh.com\r\ndebug2: compression stoc: none,zlib@openssh.com\r\ndebug2: languages ctos: \r\ndebug2: languages stoc: \r\ndebug2: first_kex_follows 0 \r\ndebug2: reserved 0 \r\ndebug1: kex: algorithm: curve25519-sha256@libssh.org\r\ndebug1: kex: host key algorithm: ecdsa-sha2-nistp256\r\ndebug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: zlib@openssh.com\r\ndebug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: zlib@openssh.com\r\ndebug1: kex: curve25519-sha256@libssh.org need=64 dh_need=64\r\ndebug1: kex: curve25519-sha256@libssh.org need=64 dh_need=64\r\ndebug3: send packet: type 30\r\ndebug1: expecting SSH2_MSG_KEX_ECDH_REPLY\r\ndebug3: receive packet: type 31\r\ndebug1: Server host key: ecdsa-sha2-nistp256 SHA256:FjxO2lkDlBKOKDjT9GoKp14peY0CdLi3CvzxRo4/ggg\r\ndebug3: hostkeys_foreach: reading file "/home/rnoriega/.ssh/known_hosts"\r\ndebug3: record_hostkey: found key type ECDSA in file /home/rnoriega/.ssh/known_hosts:66\r\ndebug3: load_hostkeys: loaded 1 keys from 38.145.32.184\r\ndebug1: Host \'38.145.32.184\' is known and matches the ECDSA host key.\r\ndebug1: Found key in /home/rnoriega/.ssh/known_hosts:66\r\ndebug3: send packet: type 21\r\ndebug2: set_newkeys: mode 1\r\ndebug1: rekey after 134217728 blocks\r\ndebug1: SSH2_MSG_NEWKEYS sent\r\ndebug1: expecting SSH2_MSG_NEWKEYS\r\ndebug3: receive packet: type 21\r\ndebug1: SSH2_MSG_NEWKEYS received\r\ndebug2: set_newkeys: mode 0\r\ndebug1: rekey after 134217728 blocks\r\ndebug2: key: /home/rnoriega/.ssh/id_rsa (0x5624b0cc8cb0), agent\r\ndebug2: key: /home/rnoriega/.ssh/id_dsa ((nil))\r\ndebug2: key: /home/rnoriega/.ssh/id_ecdsa ((nil))\r\ndebug2: key: /home/rnoriega/.ssh/id_ed25519 ((nil))\r\ndebug3: send packet: type 5\r\ndebug3: receive packet: type 6\r\ndebug2: service_accept: ssh-userauth\r\ndebug1: SSH2_MSG_SERVICE_ACCEPT received\r\ndebug3: send packet: type 50\r\ndebug3: receive packet: type 51\r\ndebug1: Authentications that can continue: publickey,gssapi-keyex,gssapi-with-mic\r\ndebug3: start over, passed a different list publickey,gssapi-keyex,gssapi-with-mic\r\ndebug3: preferred gssapi-with-mic,gssapi-keyex,hostbased,publickey\r\ndebug3: authmethod_lookup gssapi-with-mic\r\ndebug3: remaining preferred: gssapi-keyex,hostbased,publickey\r\ndebug3: authmethod_is_enabled gssapi-with-mic\r\ndebug1: Next authentication method: gssapi-with-mic\r\ndebug1: Unspecified GSS failure.  Minor code may provide more information\nNo Kerberos credentials available (default cache: KEYRING:persistent:1000)\n\r\ndebug1: Unspecified GSS failure.  Minor code may provide more information\nNo Kerberos credentials available (default cache: KEYRING:persistent:1000)\n\r\ndebug1: Unspecified GSS failure.  Minor code may provide more information\n\n\r\ndebug1: Unspecified GSS failure.  Minor code may provide more information\nNo Kerberos credentials available (default cache: KEYRING:persistent:1000)\n\r\ndebug2: we did not send a packet, disable method\r\ndebug3: authmethod_lookup gssapi-keyex\r\ndebug3: remaining preferred: hostbased,publickey\r\ndebug3: authmethod_is_enabled gssapi-keyex\r\ndebug1: Next authentication method: gssapi-keyex\r\ndebug1: No valid Key exchange context\r\ndebug2: we did not send a packet, disable method\r\ndebug3: authmethod_lookup publickey\r\ndebug3: remaining preferred: ,publickey\r\ndebug3: authmethod_is_enabled publickey\r\ndebug1: Next authentication method: publickey\r\ndebug1: Offering RSA public key: /home/rnoriega/.ssh/id_rsa\r\ndebug3: send_pubkey_test\r\ndebug3: send packet: type 50\r\ndebug2: we sent a publickey packet, wait for reply\r\ndebug3: receive packet: type 60\r\ndebug1: Server accepts key: pkalg ssh-rsa blen 279\r\ndebug2: input_userauth_pk_ok: fp SHA256:E+i1Hz94nKEg4bALXcFyEzG7DyCrgMMKnpI/hfThl7Y\r\ndebug3: sign_and_send_pubkey: RSA SHA256:E+i1Hz94nKEg4bALXcFyEzG7DyCrgMMKnpI/hfThl7Y\r\ndebug3: send packet: type 50\r\ndebug3: receive packet: type 52\r\ndebug1: Enabling compression at level 6.\r\ndebug1: Authentication succeeded (publickey).\r\nAuthenticated to 38.145.32.184 ([38.145.32.184]:22).\r\ndebug1: setting up multiplex master socket\r\ndebug3: muxserver_listen: temporary control path /home/rnoriega/.ansible/cp/14928f9d28.CBfZF3UkClwE296S\r\ndebug2: fd 5 setting O_NONBLOCK\r\ndebug3: fd 5 is O_NONBLOCK\r\ndebug3: fd 5 is O_NONBLOCK\r\ndebug1: channel 0: new [/home/rnoriega/.ansible/cp/14928f9d28]\r\ndebug3: muxserver_listen: mux listener channel 0 fd 5\r\ndebug2: fd 3 setting TCP_NODELAY\r\ndebug3: ssh_packet_set_tos: set IP_TOS 0x08\r\ndebug1: control_persist_detach: backgrounding master process\r\ndebug2: control_persist_detach: background process is 1347\r\ndebug2: fd 5 setting O_NONBLOCK\r\ndebug1: forking to background\r\ndebug1: Entering interactive session.\r\ndebug1: pledge: id\r\ndebug2: set_control_persist_exit_time: schedule exit in 60 seconds\r\ndebug1: multiplexing control connection\r\ndebug2: fd 6 setting O_NONBLOCK\r\ndebug3: fd 6 is O_NONBLOCK\r\ndebug1: channel 1: new [mux-control]\r\ndebug3: channel_post_mux_listener: new mux channel 1 fd 6\r\ndebug3: mux_master_read_cb: channel 1: hello sent\r\ndebug2: set_control_persist_exit_time: cancel scheduled exit\r\ndebug3: mux_master_read_cb: channel 1 packet type 0x00000001 len 4\r\ndebug2: process_mux_master_hello: channel 1 slave version 4\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_master_read_cb: channel 1 packet type 0x10000004 len 4\r\ndebug2: process_mux_alive_check: channel 1: alive check\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug3: mux_master_read_cb: channel 1 packet type 0x10000002 len 124\r\ndebug2: process_mux_new_session: channel 1: request tty 0, X 0, agent 0, subsys 0, term "screen-256color", cmd "/bin/sh -c \'echo ~ && sleep 0\'", env 2\r\ndebug3: process_mux_new_session: got fds stdin 7, stdout 8, stderr 9\r\ndebug2: fd 8 setting O_NONBLOCK\r\ndebug2: fd 9 setting O_NONBLOCK\r\ndebug1: channel 2: new [client-session]\r\ndebug2: process_mux_new_session: channel_new: 2 linked to control channel 1\r\ndebug2: channel 2: send open\r\ndebug3: send packet: type 90\r\ndebug3: receive packet: type 91\r\ndebug2: callback start\r\ndebug2: client_session2_setup: id 2\r\ndebug1: Sending environment.\r\ndebug1: Sending env XMODIFIERS = @im=ibus\r\ndebug2: channel 2: request env confirm 0\r\ndebug3: send packet: type 98\r\ndebug1: Sending env LANG = en_US.UTF-8\r\ndebug2: channel 2: request env confirm 0\r\ndebug3: send packet: type 98\r\ndebug1: Sending command: /bin/sh -c \'echo ~ && sleep 0\'\r\ndebug2: channel 2: request exec confirm 1\r\ndebug3: send packet: type 98\r\ndebug3: mux_session_confirm: sending success reply\r\ndebug2: callback done\r\ndebug2: channel 2: open confirm rwindow 0 rmax 32768\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug2: channel 2: rcvd adjust 2097152\r\ndebug3: receive packet: type 99\r\ndebug2: channel_input_status_confirm: type 99 id 2\r\ndebug2: exec request accepted on channel 2\r\ndebug3: receive packet: type 98\r\ndebug1: client_input_channel_req: channel 2 rtype exit-status reply 0\r\ndebug3: mux_exit_message: channel 2: exit message, exitval 0\r\ndebug3: receive packet: type 98\r\ndebug1: client_input_channel_req: channel 2 rtype eow@openssh.com reply 0\r\ndebug2: channel 2: rcvd eow\r\ndebug2: channel 2: close_read\r\ndebug2: channel 2: input open -> closed\r\ndebug3: receive packet: type 96\r\ndebug2: channel 2: rcvd eof\r\ndebug2: channel 2: output open -> drain\r\ndebug2: channel 2: obuf empty\r\ndebug2: channel 2: close_write\r\ndebug2: channel 2: output drain -> closed\r\ndebug3: receive packet: type 97\r\ndebug2: channel 2: rcvd close\r\ndebug3: channel 2: will not send data after close\r\ndebug2: channel 2: send close\r\ndebug3: send packet: type 97\r\ndebug2: channel 2: is dead\r\ndebug2: channel 2: gc: notify user\r\ndebug3: mux_master_session_cleanup_cb: entering for channel 2\r\ndebug2: channel 1: rcvd close\r\ndebug2: channel 1: output open -> drain\r\ndebug2: channel 1: close_read\r\ndebug2: channel 1: input open -> closed\r\ndebug2: channel 2: gc: user detached\r\ndebug2: channel 2: is dead\r\ndebug2: channel 2: garbage collecting\r\ndebug1: channel 2: free: client-session, nchannels 3\r\ndebug3: channel 2: status: The following connections are open:\r\n  #2 client-session (t4 r0 i3/0 o3/0 fd -1/-1 cc -1)\r\n\r\ndebug2: channel 1: obuf empty\r\ndebug2: channel 1: close_write\r\ndebug2: channel 1: output drain -> closed\r\ndebug2: channel 1: is dead (local)\r\ndebug2: channel 1: gc: notify user\r\ndebug3: mux_master_control_cleanup_cb: entering for channel 1\r\ndebug2: channel 1: gc: user detached\r\ndebug2: channel 1: is dead (local)\r\ndebug2: channel 1: garbage collecting\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug1: channel 1: free: mux-control, nchannels 2\r\ndebug3: channel 1: status: The following connections are open:\r\n\r\ndebug2: Received exit status from master 0\r\ndebug2: set_control_persist_exit_time: schedule exit in 60 seconds\r\n')
+  1342 1497263147.41647: _low_level_execute_command() done: rc=0, stdout=/home/centos
+, stderr=OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug1: Control socket "/home/rnoriega/.ansible/cp/14928f9d28" does not exist
+debug2: resolving "38.145.32.184" port 22
+debug2: ssh_connect_direct: needpriv 0
+debug1: Connecting to 38.145.32.184 [38.145.32.184] port 22.
+debug2: fd 3 setting O_NONBLOCK
+debug1: fd 3 clearing O_NONBLOCK
+debug1: Connection established.
+debug3: timeout: 9735 ms remain after connect
+debug1: identity file /home/rnoriega/.ssh/id_rsa type 1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_rsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_dsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_dsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_ecdsa type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_ecdsa-cert type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_ed25519 type -1
+debug1: key_load_public: No such file or directory
+debug1: identity file /home/rnoriega/.ssh/id_ed25519-cert type -1
+debug1: Enabling compatibility mode for protocol 2.0
+debug1: Local version string SSH-2.0-OpenSSH_7.2
+debug1: Remote protocol version 2.0, remote software version OpenSSH_6.6.1
+debug1: match: OpenSSH_6.6.1 pat OpenSSH_6.6.1* compat 0x04000000
+debug2: fd 3 setting O_NONBLOCK
+debug1: Authenticating to 38.145.32.184:22 as 'centos'
+debug3: hostkeys_foreach: reading file "/home/rnoriega/.ssh/known_hosts"
+debug3: record_hostkey: found key type ECDSA in file /home/rnoriega/.ssh/known_hosts:66
+debug3: load_hostkeys: loaded 1 keys from 38.145.32.184
+debug3: order_hostkeyalgs: prefer hostkeyalgs: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521
+debug3: send packet: type 20
+debug1: SSH2_MSG_KEXINIT sent
+debug3: receive packet: type 20
+debug1: SSH2_MSG_KEXINIT received
+debug2: local client KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,ext-info-c
+debug2: host key algorithms: ecdsa-sha2-nistp256-cert-v01@openssh.com,ecdsa-sha2-nistp384-cert-v01@openssh.com,ecdsa-sha2-nistp521-cert-v01@openssh.com,ecdsa-sha2-nistp256,ecdsa-sha2-nistp384,ecdsa-sha2-nistp521,ssh-ed25519-cert-v01@openssh.com,ssh-rsa-cert-v01@openssh.com,ssh-ed25519,rsa-sha2-512,rsa-sha2-256,ssh-rsa
+debug2: ciphers ctos: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,aes192-cbc,aes256-cbc,3des-cbc
+debug2: ciphers stoc: chacha20-poly1305@openssh.com,aes128-ctr,aes192-ctr,aes256-ctr,aes128-gcm@openssh.com,aes256-gcm@openssh.com,aes128-cbc,aes192-cbc,aes256-cbc,3des-cbc
+debug2: MACs ctos: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: MACs stoc: umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-sha1
+debug2: compression ctos: zlib@openssh.com,zlib,none
+debug2: compression stoc: zlib@openssh.com,zlib,none
+debug2: languages ctos: 
+debug2: languages stoc: 
+debug2: first_kex_follows 0 
+debug2: reserved 0 
+debug2: peer server KEXINIT proposal
+debug2: KEX algorithms: curve25519-sha256@libssh.org,ecdh-sha2-nistp256,ecdh-sha2-nistp384,ecdh-sha2-nistp521,diffie-hellman-group-exchange-sha256,diffie-hellman-group-exchange-sha1,diffie-hellman-group14-sha1,diffie-hellman-group1-sha1
+debug2: host key algorithms: ssh-rsa,ecdsa-sha2-nistp256,ssh-ed25519
+debug2: ciphers ctos: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: ciphers stoc: aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128,aes128-gcm@openssh.com,aes256-gcm@openssh.com,chacha20-poly1305@openssh.com,aes128-cbc,3des-cbc,blowfish-cbc,cast128-cbc,aes192-cbc,aes256-cbc,arcfour,rijndael-cbc@lysator.liu.se
+debug2: MACs ctos: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: MACs stoc: hmac-md5-etm@openssh.com,hmac-sha1-etm@openssh.com,umac-64-etm@openssh.com,umac-128-etm@openssh.com,hmac-sha2-256-etm@openssh.com,hmac-sha2-512-etm@openssh.com,hmac-ripemd160-etm@openssh.com,hmac-sha1-96-etm@openssh.com,hmac-md5-96-etm@openssh.com,hmac-md5,hmac-sha1,umac-64@openssh.com,umac-128@openssh.com,hmac-sha2-256,hmac-sha2-512,hmac-ripemd160,hmac-ripemd160@openssh.com,hmac-sha1-96,hmac-md5-96
+debug2: compression ctos: none,zlib@openssh.com
+debug2: compression stoc: none,zlib@openssh.com
+debug2: languages ctos: 
+debug2: languages stoc: 
+debug2: first_kex_follows 0 
+debug2: reserved 0 
+debug1: kex: algorithm: curve25519-sha256@libssh.org
+debug1: kex: host key algorithm: ecdsa-sha2-nistp256
+debug1: kex: server->client cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: zlib@openssh.com
+debug1: kex: client->server cipher: chacha20-poly1305@openssh.com MAC: <implicit> compression: zlib@openssh.com
+debug1: kex: curve25519-sha256@libssh.org need=64 dh_need=64
+debug1: kex: curve25519-sha256@libssh.org need=64 dh_need=64
+debug3: send packet: type 30
+debug1: expecting SSH2_MSG_KEX_ECDH_REPLY
+debug3: receive packet: type 31
+debug1: Server host key: ecdsa-sha2-nistp256 SHA256:FjxO2lkDlBKOKDjT9GoKp14peY0CdLi3CvzxRo4/ggg
+debug3: hostkeys_foreach: reading file "/home/rnoriega/.ssh/known_hosts"
+debug3: record_hostkey: found key type ECDSA in file /home/rnoriega/.ssh/known_hosts:66
+debug3: load_hostkeys: loaded 1 keys from 38.145.32.184
+debug1: Host '38.145.32.184' is known and matches the ECDSA host key.
+debug1: Found key in /home/rnoriega/.ssh/known_hosts:66
+debug3: send packet: type 21
+debug2: set_newkeys: mode 1
+debug1: rekey after 134217728 blocks
+debug1: SSH2_MSG_NEWKEYS sent
+debug1: expecting SSH2_MSG_NEWKEYS
+debug3: receive packet: type 21
+debug1: SSH2_MSG_NEWKEYS received
+debug2: set_newkeys: mode 0
+debug1: rekey after 134217728 blocks
+debug2: key: /home/rnoriega/.ssh/id_rsa (0x5624b0cc8cb0), agent
+debug2: key: /home/rnoriega/.ssh/id_dsa ((nil))
+debug2: key: /home/rnoriega/.ssh/id_ecdsa ((nil))
+debug2: key: /home/rnoriega/.ssh/id_ed25519 ((nil))
+debug3: send packet: type 5
+debug3: receive packet: type 6
+debug2: service_accept: ssh-userauth
+debug1: SSH2_MSG_SERVICE_ACCEPT received
+debug3: send packet: type 50
+debug3: receive packet: type 51
+debug1: Authentications that can continue: publickey,gssapi-keyex,gssapi-with-mic
+debug3: start over, passed a different list publickey,gssapi-keyex,gssapi-with-mic
+debug3: preferred gssapi-with-mic,gssapi-keyex,hostbased,publickey
+debug3: authmethod_lookup gssapi-with-mic
+debug3: remaining preferred: gssapi-keyex,hostbased,publickey
+debug3: authmethod_is_enabled gssapi-with-mic
+debug1: Next authentication method: gssapi-with-mic
+debug1: Unspecified GSS failure.  Minor code may provide more information
+No Kerberos credentials available (default cache: KEYRING:persistent:1000)
+
+debug1: Unspecified GSS failure.  Minor code may provide more information
+No Kerberos credentials available (default cache: KEYRING:persistent:1000)
+
+debug1: Unspecified GSS failure.  Minor code may provide more information
+
+
+debug1: Unspecified GSS failure.  Minor code may provide more information
+No Kerberos credentials available (default cache: KEYRING:persistent:1000)
+
+debug2: we did not send a packet, disable method
+debug3: authmethod_lookup gssapi-keyex
+debug3: remaining preferred: hostbased,publickey
+debug3: authmethod_is_enabled gssapi-keyex
+debug1: Next authentication method: gssapi-keyex
+debug1: No valid Key exchange context
+debug2: we did not send a packet, disable method
+debug3: authmethod_lookup publickey
+debug3: remaining preferred: ,publickey
+debug3: authmethod_is_enabled publickey
+debug1: Next authentication method: publickey
+debug1: Offering RSA public key: /home/rnoriega/.ssh/id_rsa
+debug3: send_pubkey_test
+debug3: send packet: type 50
+debug2: we sent a publickey packet, wait for reply
+debug3: receive packet: type 60
+debug1: Server accepts key: pkalg ssh-rsa blen 279
+debug2: input_userauth_pk_ok: fp SHA256:E+i1Hz94nKEg4bALXcFyEzG7DyCrgMMKnpI/hfThl7Y
+debug3: sign_and_send_pubkey: RSA SHA256:E+i1Hz94nKEg4bALXcFyEzG7DyCrgMMKnpI/hfThl7Y
+debug3: send packet: type 50
+debug3: receive packet: type 52
+debug1: Enabling compression at level 6.
+debug1: Authentication succeeded (publickey).
+Authenticated to 38.145.32.184 ([38.145.32.184]:22).
+debug1: setting up multiplex master socket
+debug3: muxserver_listen: temporary control path /home/rnoriega/.ansible/cp/14928f9d28.CBfZF3UkClwE296S
+debug2: fd 5 setting O_NONBLOCK
+debug3: fd 5 is O_NONBLOCK
+debug3: fd 5 is O_NONBLOCK
+debug1: channel 0: new [/home/rnoriega/.ansible/cp/14928f9d28]
+debug3: muxserver_listen: mux listener channel 0 fd 5
+debug2: fd 3 setting TCP_NODELAY
+debug3: ssh_packet_set_tos: set IP_TOS 0x08
+debug1: control_persist_detach: backgrounding master process
+debug2: control_persist_detach: background process is 1347
+debug2: fd 5 setting O_NONBLOCK
+debug1: forking to background
+debug1: Entering interactive session.
+debug1: pledge: id
+debug2: set_control_persist_exit_time: schedule exit in 60 seconds
+debug1: multiplexing control connection
+debug2: fd 6 setting O_NONBLOCK
+debug3: fd 6 is O_NONBLOCK
+debug1: channel 1: new [mux-control]
+debug3: channel_post_mux_listener: new mux channel 1 fd 6
+debug3: mux_master_read_cb: channel 1: hello sent
+debug2: set_control_persist_exit_time: cancel scheduled exit
+debug3: mux_master_read_cb: channel 1 packet type 0x00000001 len 4
+debug2: process_mux_master_hello: channel 1 slave version 4
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_master_read_cb: channel 1 packet type 0x10000004 len 4
+debug2: process_mux_alive_check: channel 1: alive check
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+debug3: mux_master_read_cb: channel 1 packet type 0x10000002 len 124
+debug2: process_mux_new_session: channel 1: request tty 0, X 0, agent 0, subsys 0, term "screen-256color", cmd "/bin/sh -c 'echo ~ && sleep 0'", env 2
+debug3: process_mux_new_session: got fds stdin 7, stdout 8, stderr 9
+debug2: fd 8 setting O_NONBLOCK
+debug2: fd 9 setting O_NONBLOCK
+debug1: channel 2: new [client-session]
+debug2: process_mux_new_session: channel_new: 2 linked to control channel 1
+debug2: channel 2: send open
+debug3: send packet: type 90
+debug3: receive packet: type 91
+debug2: callback start
+debug2: client_session2_setup: id 2
+debug1: Sending environment.
+debug1: Sending env XMODIFIERS = @im=ibus
+debug2: channel 2: request env confirm 0
+debug3: send packet: type 98
+debug1: Sending env LANG = en_US.UTF-8
+debug2: channel 2: request env confirm 0
+debug3: send packet: type 98
+debug1: Sending command: /bin/sh -c 'echo ~ && sleep 0'
+debug2: channel 2: request exec confirm 1
+debug3: send packet: type 98
+debug3: mux_session_confirm: sending success reply
+debug2: callback done
+debug2: channel 2: open confirm rwindow 0 rmax 32768
+debug1: mux_client_request_session: master session id: 2
+debug2: channel 2: rcvd adjust 2097152
+debug3: receive packet: type 99
+debug2: channel_input_status_confirm: type 99 id 2
+debug2: exec request accepted on channel 2
+debug3: receive packet: type 98
+debug1: client_input_channel_req: channel 2 rtype exit-status reply 0
+debug3: mux_exit_message: channel 2: exit message, exitval 0
+debug3: receive packet: type 98
+debug1: client_input_channel_req: channel 2 rtype eow@openssh.com reply 0
+debug2: channel 2: rcvd eow
+debug2: channel 2: close_read
+debug2: channel 2: input open -> closed
+debug3: receive packet: type 96
+debug2: channel 2: rcvd eof
+debug2: channel 2: output open -> drain
+debug2: channel 2: obuf empty
+debug2: channel 2: close_write
+debug2: channel 2: output drain -> closed
+debug3: receive packet: type 97
+debug2: channel 2: rcvd close
+debug3: channel 2: will not send data after close
+debug2: channel 2: send close
+debug3: send packet: type 97
+debug2: channel 2: is dead
+debug2: channel 2: gc: notify user
+debug3: mux_master_session_cleanup_cb: entering for channel 2
+debug2: channel 1: rcvd close
+debug2: channel 1: output open -> drain
+debug2: channel 1: close_read
+debug2: channel 1: input open -> closed
+debug2: channel 2: gc: user detached
+debug2: channel 2: is dead
+debug2: channel 2: garbage collecting
+debug1: channel 2: free: client-session, nchannels 3
+debug3: channel 2: status: The following connections are open:
+  #2 client-session (t4 r0 i3/0 o3/0 fd -1/-1 cc -1)
+
+debug2: channel 1: obuf empty
+debug2: channel 1: close_write
+debug2: channel 1: output drain -> closed
+debug2: channel 1: is dead (local)
+debug2: channel 1: gc: notify user
+debug3: mux_master_control_cleanup_cb: entering for channel 1
+debug2: channel 1: gc: user detached
+debug2: channel 1: is dead (local)
+debug2: channel 1: garbage collecting
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug1: channel 1: free: mux-control, nchannels 2
+debug3: channel 1: status: The following connections are open:
+
+debug2: Received exit status from master 0
+debug2: set_control_persist_exit_time: schedule exit in 60 seconds
+  1342 1497263147.41659: _low_level_execute_command(): starting
+  1342 1497263147.41666: _low_level_execute_command(): executing: /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897 `" && echo ansible-tmp-1497263144.37-11102031704897="` echo /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897 `" ) && sleep 0'
+<38.145.32.184> ESTABLISH SSH CONNECTION FOR USER: centos
+<38.145.32.184> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 38.145.32.184 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897 `" && echo ansible-tmp-1497263144.37-11102031704897="` echo /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897 `" ) && sleep 0'"'"''
+  1342 1497263147.42466: stderr chunk (state=2):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1342 1497263147.42486: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+<<<
+  1342 1497263147.42497: stderr chunk (state=3):
+>>>debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+<<<
+  1342 1497263147.42504: stderr chunk (state=3):
+>>>debug3: mux_client_request_session: session request sent
+<<<
+  1342 1497263147.72246: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1342 1497263148.02936: stdout chunk (state=3):
+>>>ansible-tmp-1497263144.37-11102031704897=/home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897
+<<<
+  1342 1497263148.02960: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+  1342 1497263148.03016: stderr chunk (state=3):
+>>><<<
+  1342 1497263148.03020: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, 'ansible-tmp-1497263144.37-11102031704897=/home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897\n', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+  1342 1497263148.03041: _low_level_execute_command() done: rc=0, stdout=ansible-tmp-1497263144.37-11102031704897=/home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897
+, stderr=OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+debug1: mux_client_request_session: master session id: 2
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+  1342 1497263148.03049: transferring module to remote /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/setup.py
+<38.145.32.184> PUT /tmp/tmpyyuf74 TO /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/setup.py
+<38.145.32.184> SSH: EXEC sftp -b - -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 '[38.145.32.184]'
+  1342 1497263148.03574: Sending initial data
+  1342 1497263148.03590: Sent initial data (95 bytes)
+  1342 1497263148.04192: stderr chunk (state=3):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1342 1497263148.04214: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+<<<
+  1342 1497263148.04227: stderr chunk (state=3):
+>>>debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+<<<
+  1342 1497263148.04236: stderr chunk (state=3):
+>>>debug3: mux_client_request_session: session request sent
+<<<
+  1342 1497263148.33633: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1342 1497263148.88951: stderr chunk (state=3):
+>>>debug2: Remote version: 3
+debug2: Server supports extension "posix-rename@openssh.com" revision 1
+debug2: Server supports extension "statvfs@openssh.com" revision 2
+debug2: Server supports extension "fstatvfs@openssh.com" revision 2
+debug2: Server supports extension "hardlink@openssh.com" revision 1
+debug2: Server supports extension "fsync@openssh.com" revision 1
+debug3: Sent message fd 5 T:16 I:1
+<<<
+  1342 1497263149.14752: stderr chunk (state=3):
+>>>debug3: SSH_FXP_REALPATH . -> /home/centos size 0
+debug3: Looking up /tmp/tmpyyuf74
+<<<
+  1342 1497263149.14766: stderr chunk (state=3):
+>>>debug3: Sent message fd 5 T:17 I:2
+<<<
+  1342 1497263149.14771: stdout chunk (state=3):
+>>>sftp> put /tmp/tmpyyuf74 /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/setup.py
+<<<
+  1342 1497263149.46272: stderr chunk (state=3):
+>>>debug3: Received stat reply T:101 I:2
+debug1: Couldn't stat remote file: No such file or directory
+debug3: Sent message SSH2_FXP_OPEN I:3 P:/home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/setup.py
+<<<
+  1342 1497263149.77026: stderr chunk (state=3):
+>>>debug3: Sent message SSH2_FXP_WRITE I:4 O:0 S:32768
+<<<
+  1342 1497263150.17999: stderr chunk (state=3):
+>>>debug3: SSH2_FXP_STATUS 0
+debug3: In write loop, ack for 4 32768 bytes at 0
+debug3: Sent message SSH2_FXP_WRITE I:5 O:32768 S:32768
+debug3: Sent message SSH2_FXP_WRITE I:6 O:65536 S:32768
+<<<
+  1342 1497263150.18047: stderr chunk (state=3):
+>>>debug3: Sent message SSH2_FXP_WRITE I:7 O:98304 S:5343
+<<<
+  1342 1497263150.52382: stderr chunk (state=3):
+>>>debug3: SSH2_FXP_STATUS 0
+debug3: In write loop, ack for 5 32768 bytes at 32768
+<<<
+  1342 1497263150.56668: stderr chunk (state=3):
+>>>debug3: SSH2_FXP_STATUS 0
+debug3: In write loop, ack for 6 32768 bytes at 65536
+debug3: SSH2_FXP_STATUS 0
+debug3: In write loop, ack for 7 5343 bytes at 98304
+debug3: Sent message SSH2_FXP_CLOSE I:4
+<<<
+  1342 1497263150.81419: stderr chunk (state=3):
+>>>debug3: SSH2_FXP_STATUS 0
+<<<
+  1342 1497263151.10124: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+  1342 1497263151.10200: stderr chunk (state=3):
+>>><<<
+  1342 1497263151.10206: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, 'sftp> put /tmp/tmpyyuf74 /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/setup.py\n', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug2: Remote version: 3\r\ndebug2: Server supports extension "posix-rename@openssh.com" revision 1\r\ndebug2: Server supports extension "statvfs@openssh.com" revision 2\r\ndebug2: Server supports extension "fstatvfs@openssh.com" revision 2\r\ndebug2: Server supports extension "hardlink@openssh.com" revision 1\r\ndebug2: Server supports extension "fsync@openssh.com" revision 1\r\ndebug3: Sent message fd 5 T:16 I:1\r\ndebug3: SSH_FXP_REALPATH . -> /home/centos size 0\r\ndebug3: Looking up /tmp/tmpyyuf74\r\ndebug3: Sent message fd 5 T:17 I:2\r\ndebug3: Received stat reply T:101 I:2\r\ndebug1: Couldn\'t stat remote file: No such file or directory\r\ndebug3: Sent message SSH2_FXP_OPEN I:3 P:/home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/setup.py\r\ndebug3: Sent message SSH2_FXP_WRITE I:4 O:0 S:32768\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: In write loop, ack for 4 32768 bytes at 0\r\ndebug3: Sent message SSH2_FXP_WRITE I:5 O:32768 S:32768\r\ndebug3: Sent message SSH2_FXP_WRITE I:6 O:65536 S:32768\r\ndebug3: Sent message SSH2_FXP_WRITE I:7 O:98304 S:5343\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: In write loop, ack for 5 32768 bytes at 32768\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: In write loop, ack for 6 32768 bytes at 65536\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: In write loop, ack for 7 5343 bytes at 98304\r\ndebug3: Sent message SSH2_FXP_CLOSE I:4\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+  1342 1497263151.10230: done transferring module to remote
+  1342 1497263151.10251: _low_level_execute_command(): starting
+  1342 1497263151.10256: _low_level_execute_command(): executing: /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/ /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/setup.py && sleep 0'
+<38.145.32.184> ESTABLISH SSH CONNECTION FOR USER: centos
+<38.145.32.184> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 38.145.32.184 '/bin/sh -c '"'"'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/ /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/setup.py && sleep 0'"'"''
+  1342 1497263151.11079: stderr chunk (state=2):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1342 1497263151.11100: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+<<<
+  1342 1497263151.11110: stderr chunk (state=3):
+>>>debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+<<<
+  1342 1497263151.37491: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1342 1497263151.71671: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+  1342 1497263151.71682: stdout chunk (state=3):
+>>><<<
+  1342 1497263151.71693: stderr chunk (state=3):
+>>><<<
+<38.145.32.184> (0, '', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+  1342 1497263151.71714: _low_level_execute_command() done: rc=0, stdout=, stderr=OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+debug1: mux_client_request_session: master session id: 2
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+  1342 1497263151.71719: _low_level_execute_command(): starting
+  1342 1497263151.71725: _low_level_execute_command(): executing: /bin/sh -c '/usr/bin/python /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/setup.py; rm -rf "/home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/" > /dev/null 2>&1 && sleep 0'
+<38.145.32.184> ESTABLISH SSH CONNECTION FOR USER: centos
+<38.145.32.184> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 -tt 38.145.32.184 '/bin/sh -c '"'"'/usr/bin/python /home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/setup.py; rm -rf "/home/centos/.ansible/tmp/ansible-tmp-1497263144.37-11102031704897/" > /dev/null 2>&1 && sleep 0'"'"''
+  1342 1497263151.72549: stderr chunk (state=2):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1342 1497263151.72569: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+<<<
+  1342 1497263151.72578: stderr chunk (state=3):
+>>>debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+<<<
+  1342 1497263151.72584: stderr chunk (state=3):
+>>>debug3: mux_client_request_session: session request sent
+<<<
+  1342 1497263152.02300: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1342 1497263152.63912: stdout chunk (state=3):
+>>>
+{"invocation": {"module_args": {"filter": "*", "gather_subset": ["all"], "fact_path": "/etc/ansible/facts.d", "gather_timeout": 10}}, "changed": false, "ansible_facts": {"ansible_product_serial": "NA", "ansible_form_factor": "Other", "ansible_product_version": "14.0.6-0.20170421215600.52a75c7.el7.centos", "ansible_fips": false, "ansible_service_mgr": "systemd", "ansible_user_id": "centos", "ansible_user_dir": "/home/centos", "ansible_memtotal_mb": 488, "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN1SeqtjTTZLKS9P1LmiD8qqdLlN+bt4+9s8mJ0UCDqlYxkdQOK3KzECN4EW41ntHLg4enWf6tsdocSaQVnjdgg=", "ansible_distribution_version": "7.3.1611", "ansible_domain": "", "ansible_virtualization_type": "kvm", "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIIy4QmPNuCn7hIQUFNRGIiYjzf2RzuHLEPjXZikKETJz", "ansible_processor_cores": 1, "ansible_virtualization_role": "host", "ansible_dns": {"nameservers": ["8.8.8.8"], "search": ["openstacklocal"]}, "ansible_processor_vcpus": 1, "ansible_bios_version": "1.9.1-5.el7_3.2", "ansible_processor": ["GenuineIntel", "Intel Core Processor (Haswell, no TSX)"], "ansible_date_time": {"weekday_number": "1", "iso8601_basic_short": "20170612T102552", "tz": "UTC", "weeknumber": "24", "hour": "10", "year": "2017", "minute": "25", "tz_offset": "+0000", "month": "06", "epoch": "1497263152", "iso8601_micro": "2017-06-12T10:25:52.457174Z", "weekday": "Monday", "time": "10:25:52", "date": "2017-06-12", "iso8601": "2017-06-12T10:25:52Z", "day": "12", "iso8601_basic": "20170612T102552457103", "second": "52"}, "ansible_lo": {"features": {"tx_checksum_ipv4": "off [fixed]", "generic_receive_offload": "on", "tx_checksum_ipv6": "off [fixed]", "tx_scatter_gather_fraglist": "on [fixed]", "rx_all": "off [fixed]", "highdma": "on [fixed]", "rx_fcs": "off [fixed]", "tx_lockless": "on [fixed]", "tx_tcp_ecn_segmentation": "on", "tx_tcp6_segmentation": "on", "tx_gso_robust": "off [fixed]", "tx_ipip_segmentation": "off [fixed]", "tx_checksumming": "on", "vlan_challenged": "on [fixed]", "loopback": "on [fixed]", "fcoe_mtu": "off [fixed]", "scatter_gather": "on", "tx_checksum_sctp": "on [fixed]", "tx_vlan_stag_hw_insert": "off [fixed]", "rx_vlan_stag_hw_parse": "off [fixed]", "rx_vlan_stag_filter": "off [fixed]", "large_receive_offload": "off [fixed]", "tx_scatter_gather": "on [fixed]", "rx_checksumming": "on [fixed]", "tx_tcp_segmentation": "on", "netns_local": "on [fixed]", "busy_poll": "off [fixed]", "generic_segmentation_offload": "on", "tx_udp_tnl_segmentation": "off [fixed]", "tcp_segmentation_offload": "on", "l2_fwd_offload": "off [fixed]", "rx_vlan_offload": "off [fixed]", "ntuple_filters": "off [fixed]", "tx_vlan_offload": "off [fixed]", "tx_nocache_copy": "off [fixed]", "tx_mpls_segmentation": "off [fixed]", "udp_fragmentation_offload": "on", "tx_sctp_segmentation": "on", "tx_sit_segmentation": "off [fixed]", "tx_checksum_fcoe_crc": "off [fixed]", "hw_tc_offload": "off [fixed]", "tx_checksum_ip_generic": "on [fixed]", "tx_fcoe_segmentation": "off [fixed]", "rx_vlan_filter": "off [fixed]", "receive_hashing": "off [fixed]", "tx_gre_segmentation": "off [fixed]"}, "mtu": 65536, "device": "lo", "promisc": false, "ipv4": {"broadcast": "host", "netmask": "255.0.0.0", "network": "127.0.0.0", "address": "127.0.0.1"}, "ipv6": [{"scope": "host", "prefix": "128", "address": "::1"}], "active": true, "type": "loopback"}, "ansible_userspace_bits": "64", "ansible_architecture": "x86_64", "ansible_real_user_id": 1000, "ansible_default_ipv4": {"macaddress": "fa:16:3e:b6:b5:1c", "network": "192.168.0.0", "mtu": 1450, "broadcast": "192.168.0.255", "alias": "eth0", "netmask": "255.255.255.0", "address": "192.168.0.10", "interface": "eth0", "type": "ether", "gateway": "192.168.0.1"}, "ansible_swapfree_mb": 0, "ansible_default_ipv6": {}, "ansible_distribution_release": "Core", "ansible_system_vendor": "RDO", "ansible_apparmor": {"status": "disabled"}, "ansible_cmdline": {"LANG": "en_US.UTF-8", "console": "ttyS0,115200", "crashkernel": "auto", "BOOT_IMAGE": "/boot/vmlinuz-3.10.0-514.10.2.el7.x86_64", "ro": true, "root": "UUID=0a84de8e-5bfe-43e7-992b-5bfff8cdce43"}, "ansible_effective_user_id": 1000, "ansible_mounts": [{"uuid": "0a84de8e-5bfe-43e7-992b-5bfff8cdce43", "size_total": 9644941312, "mount": "/", "size_available": 7948017664, "fstype": "xfs", "device": "/dev/vda1", "options": "rw,seclabel,relatime,attr2,inode64,noquota"}], "ansible_selinux": {"status": "enabled", "policyvers": 28, "type": "targeted", "mode": "enforcing", "config_mode": "enforcing"}, "ansible_os_family": "RedHat", "ansible_userspace_architecture": "x86_64", "ansible_product_uuid": "NA", "ansible_kernel": "3.10.0-514.10.2.el7.x86_64", "ansible_product_name": "OpenStack Compute", "ansible_pkg_mgr": "yum", "ansible_memfree_mb": 66, "ansible_devices": {"vda": {"scheduler_mode": "", "rotational": "1", "vendor": "0x1af4", "sectors": "18874368", "sas_device_handle": null, "sas_address": null, "host": "SCSI storage controller: Red Hat, Inc Virtio block device", "sectorsize": "512", "removable": "0", "support_discard": "0", "model": null, "partitions": {"vda1": {"sectorsize": 512, "uuid": "0a84de8e-5bfe-43e7-992b-5bfff8cdce43", "sectors": "18858262", "start": "2048", "holders": [], "size": "8.99 GB"}}, "holders": [], "size": "9.00 GB"}}, "ansible_user_uid": 1000, "ansible_memory_mb": {"real": {"total": 488, "used": 422, "free": 66}, "swap": {"cached": 0, "total": 0, "free": 0, "used": 0}, "nocache": {"used": 166, "free": 322}}, "ansible_distribution": "CentOS", "ansible_env": {"LESSOPEN": "||/usr/bin/lesspipe.sh %s", "SSH_CLIENT": "47.52.32.146 58438 22", "SELINUX_USE_CURRENT_RANGE": "", "LOGNAME": "centos", "USER": "centos", "PATH": "/usr/local/bin:/usr/bin", "HOME": "/home/centos", "LANG": "en_US.UTF-8", "TERM": "screen-256color", "SHELL": "/bin/bash", "SHLVL": "2", "XMODIFIERS": "@im=ibus", "XDG_RUNTIME_DIR": "/run/user/1000", "SELINUX_ROLE_REQUESTED": "", "XDG_SESSION_ID": "25", "_": "/usr/bin/python", "LS_COLORS": "rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:", "SSH_TTY": "/dev/pts/1", "SELINUX_LEVEL_REQUESTED": "", "PWD": "/home/centos", "MAIL": "/var/mail/centos", "OS_COMPUTE_API_VERSION": "2.32", "SSH_CONNECTION": "47.52.32.146 58438 192.168.0.10 22"}, "ansible_distribution_major_version": "7", "module_setup": true, "ansible_processor_count": 1, "ansible_hostname": "ansible-jumphost", "ansible_effective_group_id": 1000, "ansible_swaptotal_mb": 0, "ansible_real_group_id": 1000, "ansible_bios_date": "04/01/2014", "ansible_all_ipv6_addresses": ["fe80::f816:3eff:feb6:b51c"], "ansible_interfaces": ["lo", "eth0"], "ansible_uptime_seconds": 14023, "ansible_machine_id": "df877a200226bc47d06f26dae0736ec9", "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDgLpbtS6EBzYr7t7V8aHn4gTWa6slK5lRykfADJoxf/61bEu8DYSsvQqU6SW3HRjL7/eQr+UjYIt3j/O0hdhV/UPKj89thQCG5SZLq2DycUwBNncjC0ri6gCZU5V+ZTmfahEhrtndXZUuhDypVVT3WhoMYWF6rM6588GeS0/C4JKZ2xd8Z6SwDrzNHxZRuSHp8XMZkSQFhRrxBx6dVgs/wjR0PfciuBQjsrnq3bhMNU7nFkzc5pzh2GlTmZkI5qO/fSLwt3z5zGaXm/Zay5fUBrFWNoQxwM/MUSppx05/n+xGmba3x/4V64097RyxsSvytE2Z/GaFa9Y5wE6M6dAr9", "ansible_gather_subset": ["hardware", "network", "virtual"], "ansible_user_gecos": "Cloud User", "ansible_system_capabilities_enforced": "True", "ansible_python": {"executable": "/usr/bin/python", "version": {"micro": 5, "major": 2, "releaselevel": "final", "serial": 0, "minor": 7}, "type": "CPython", "has_sslcontext": true, "version_info": [2, 7, 5, "final", 0]}, "ansible_machine": "x86_64", "ansible_processor_threads_per_core": 1, "ansible_fqdn": "ansible-jumphost", "ansible_user_gid": 1000, "ansible_eth0": {"macaddress": "fa:16:3e:b6:b5:1c", "features": {"tx_checksum_ipv4": "off [fixed]", "generic_receive_offload": "on", "tx_checksum_ipv6": "off [fixed]", "tx_scatter_gather_fraglist": "off [fixed]", "rx_all": "off [fixed]", "highdma": "on [fixed]", "rx_fcs": "off [fixed]", "tx_lockless": "off [fixed]", "tx_tcp_ecn_segmentation": "on", "tx_tcp6_segmentation": "on", "tx_gso_robust": "off [fixed]", "tx_ipip_segmentation": "off [fixed]", "tx_checksumming": "on", "vlan_challenged": "off [fixed]", "loopback": "off [fixed]", "fcoe_mtu": "off [fixed]", "scatter_gather": "on", "tx_checksum_sctp": "off [fixed]", "tx_vlan_stag_hw_insert": "off [fixed]", "rx_vlan_stag_hw_parse": "off [fixed]", "rx_vlan_stag_filter": "off [fixed]", "large_receive_offload": "off [fixed]", "tx_scatter_gather": "on", "rx_checksumming": "on [fixed]", "tx_tcp_segmentation": "on", "netns_local": "off [fixed]", "busy_poll": "off [fixed]", "generic_segmentation_offload": "on", "tx_udp_tnl_segmentation": "off [fixed]", "tcp_segmentation_offload": "on", "l2_fwd_offload": "off [fixed]", "rx_vlan_offload": "off [fixed]", "ntuple_filters": "off [fixed]", "tx_vlan_offload": "off [fixed]", "tx_nocache_copy": "off", "tx_mpls_segmentation": "off [fixed]", "udp_fragmentation_offload": "on", "tx_sctp_segmentation": "off [fixed]", "tx_sit_segmentation": "off [fixed]", "tx_checksum_fcoe_crc": "off [fixed]", "hw_tc_offload": "off [fixed]", "tx_checksum_ip_generic": "on", "tx_fcoe_segmentation": "off [fixed]", "rx_vlan_filter": "on [fixed]", "receive_hashing": "off [fixed]", "tx_gre_segmentation": "off [fixed]"}, "pciid": "virtio0", "module": "virtio_net", "mtu": 1450, "device": "eth0", "promisc": false, "ipv4": {"broadcast": "192.168.0.255", "netmask": "255.255.255.0", "network": "192.168.0.0", "address": "192.168.0.10"}, "ipv6": [{"scope": "link", "prefix": "64", "address": "fe80::f816:3eff:feb6:b51c"}], "active": true, "type": "ether"}, "ansible_nodename": "ansible-jumphost", "ansible_system": "Linux", "ansible_user_shell": "/bin/bash", "ansible_system_capabilities": [""], "ansible_all_ipv4_addresses": ["192.168.0.10"], "ansible_python_version": "2.7.5"}}
+<<<
+  1342 1497263152.63978: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+Shared connection to 38.145.32.184 closed.
+<<<
+  1342 1497263152.64009: stderr chunk (state=3):
+>>><<<
+  1342 1497263152.64013: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, '\r\n{"invocation": {"module_args": {"filter": "*", "gather_subset": ["all"], "fact_path": "/etc/ansible/facts.d", "gather_timeout": 10}}, "changed": false, "ansible_facts": {"ansible_product_serial": "NA", "ansible_form_factor": "Other", "ansible_product_version": "14.0.6-0.20170421215600.52a75c7.el7.centos", "ansible_fips": false, "ansible_service_mgr": "systemd", "ansible_user_id": "centos", "ansible_user_dir": "/home/centos", "ansible_memtotal_mb": 488, "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN1SeqtjTTZLKS9P1LmiD8qqdLlN+bt4+9s8mJ0UCDqlYxkdQOK3KzECN4EW41ntHLg4enWf6tsdocSaQVnjdgg=", "ansible_distribution_version": "7.3.1611", "ansible_domain": "", "ansible_virtualization_type": "kvm", "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIIy4QmPNuCn7hIQUFNRGIiYjzf2RzuHLEPjXZikKETJz", "ansible_processor_cores": 1, "ansible_virtualization_role": "host", "ansible_dns": {"nameservers": ["8.8.8.8"], "search": ["openstacklocal"]}, "ansible_processor_vcpus": 1, "ansible_bios_version": "1.9.1-5.el7_3.2", "ansible_processor": ["GenuineIntel", "Intel Core Processor (Haswell, no TSX)"], "ansible_date_time": {"weekday_number": "1", "iso8601_basic_short": "20170612T102552", "tz": "UTC", "weeknumber": "24", "hour": "10", "year": "2017", "minute": "25", "tz_offset": "+0000", "month": "06", "epoch": "1497263152", "iso8601_micro": "2017-06-12T10:25:52.457174Z", "weekday": "Monday", "time": "10:25:52", "date": "2017-06-12", "iso8601": "2017-06-12T10:25:52Z", "day": "12", "iso8601_basic": "20170612T102552457103", "second": "52"}, "ansible_lo": {"features": {"tx_checksum_ipv4": "off [fixed]", "generic_receive_offload": "on", "tx_checksum_ipv6": "off [fixed]", "tx_scatter_gather_fraglist": "on [fixed]", "rx_all": "off [fixed]", "highdma": "on [fixed]", "rx_fcs": "off [fixed]", "tx_lockless": "on [fixed]", "tx_tcp_ecn_segmentation": "on", "tx_tcp6_segmentation": "on", "tx_gso_robust": "off [fixed]", "tx_ipip_segmentation": "off [fixed]", "tx_checksumming": "on", "vlan_challenged": "on [fixed]", "loopback": "on [fixed]", "fcoe_mtu": "off [fixed]", "scatter_gather": "on", "tx_checksum_sctp": "on [fixed]", "tx_vlan_stag_hw_insert": "off [fixed]", "rx_vlan_stag_hw_parse": "off [fixed]", "rx_vlan_stag_filter": "off [fixed]", "large_receive_offload": "off [fixed]", "tx_scatter_gather": "on [fixed]", "rx_checksumming": "on [fixed]", "tx_tcp_segmentation": "on", "netns_local": "on [fixed]", "busy_poll": "off [fixed]", "generic_segmentation_offload": "on", "tx_udp_tnl_segmentation": "off [fixed]", "tcp_segmentation_offload": "on", "l2_fwd_offload": "off [fixed]", "rx_vlan_offload": "off [fixed]", "ntuple_filters": "off [fixed]", "tx_vlan_offload": "off [fixed]", "tx_nocache_copy": "off [fixed]", "tx_mpls_segmentation": "off [fixed]", "udp_fragmentation_offload": "on", "tx_sctp_segmentation": "on", "tx_sit_segmentation": "off [fixed]", "tx_checksum_fcoe_crc": "off [fixed]", "hw_tc_offload": "off [fixed]", "tx_checksum_ip_generic": "on [fixed]", "tx_fcoe_segmentation": "off [fixed]", "rx_vlan_filter": "off [fixed]", "receive_hashing": "off [fixed]", "tx_gre_segmentation": "off [fixed]"}, "mtu": 65536, "device": "lo", "promisc": false, "ipv4": {"broadcast": "host", "netmask": "255.0.0.0", "network": "127.0.0.0", "address": "127.0.0.1"}, "ipv6": [{"scope": "host", "prefix": "128", "address": "::1"}], "active": true, "type": "loopback"}, "ansible_userspace_bits": "64", "ansible_architecture": "x86_64", "ansible_real_user_id": 1000, "ansible_default_ipv4": {"macaddress": "fa:16:3e:b6:b5:1c", "network": "192.168.0.0", "mtu": 1450, "broadcast": "192.168.0.255", "alias": "eth0", "netmask": "255.255.255.0", "address": "192.168.0.10", "interface": "eth0", "type": "ether", "gateway": "192.168.0.1"}, "ansible_swapfree_mb": 0, "ansible_default_ipv6": {}, "ansible_distribution_release": "Core", "ansible_system_vendor": "RDO", "ansible_apparmor": {"status": "disabled"}, "ansible_cmdline": {"LANG": "en_US.UTF-8", "console": "ttyS0,115200", "crashkernel": "auto", "BOOT_IMAGE": "/boot/vmlinuz-3.10.0-514.10.2.el7.x86_64", "ro": true, "root": "UUID=0a84de8e-5bfe-43e7-992b-5bfff8cdce43"}, "ansible_effective_user_id": 1000, "ansible_mounts": [{"uuid": "0a84de8e-5bfe-43e7-992b-5bfff8cdce43", "size_total": 9644941312, "mount": "/", "size_available": 7948017664, "fstype": "xfs", "device": "/dev/vda1", "options": "rw,seclabel,relatime,attr2,inode64,noquota"}], "ansible_selinux": {"status": "enabled", "policyvers": 28, "type": "targeted", "mode": "enforcing", "config_mode": "enforcing"}, "ansible_os_family": "RedHat", "ansible_userspace_architecture": "x86_64", "ansible_product_uuid": "NA", "ansible_kernel": "3.10.0-514.10.2.el7.x86_64", "ansible_product_name": "OpenStack Compute", "ansible_pkg_mgr": "yum", "ansible_memfree_mb": 66, "ansible_devices": {"vda": {"scheduler_mode": "", "rotational": "1", "vendor": "0x1af4", "sectors": "18874368", "sas_device_handle": null, "sas_address": null, "host": "SCSI storage controller: Red Hat, Inc Virtio block device", "sectorsize": "512", "removable": "0", "support_discard": "0", "model": null, "partitions": {"vda1": {"sectorsize": 512, "uuid": "0a84de8e-5bfe-43e7-992b-5bfff8cdce43", "sectors": "18858262", "start": "2048", "holders": [], "size": "8.99 GB"}}, "holders": [], "size": "9.00 GB"}}, "ansible_user_uid": 1000, "ansible_memory_mb": {"real": {"total": 488, "used": 422, "free": 66}, "swap": {"cached": 0, "total": 0, "free": 0, "used": 0}, "nocache": {"used": 166, "free": 322}}, "ansible_distribution": "CentOS", "ansible_env": {"LESSOPEN": "||/usr/bin/lesspipe.sh %s", "SSH_CLIENT": "47.52.32.146 58438 22", "SELINUX_USE_CURRENT_RANGE": "", "LOGNAME": "centos", "USER": "centos", "PATH": "/usr/local/bin:/usr/bin", "HOME": "/home/centos", "LANG": "en_US.UTF-8", "TERM": "screen-256color", "SHELL": "/bin/bash", "SHLVL": "2", "XMODIFIERS": "@im=ibus", "XDG_RUNTIME_DIR": "/run/user/1000", "SELINUX_ROLE_REQUESTED": "", "XDG_SESSION_ID": "25", "_": "/usr/bin/python", "LS_COLORS": "rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:", "SSH_TTY": "/dev/pts/1", "SELINUX_LEVEL_REQUESTED": "", "PWD": "/home/centos", "MAIL": "/var/mail/centos", "OS_COMPUTE_API_VERSION": "2.32", "SSH_CONNECTION": "47.52.32.146 58438 192.168.0.10 22"}, "ansible_distribution_major_version": "7", "module_setup": true, "ansible_processor_count": 1, "ansible_hostname": "ansible-jumphost", "ansible_effective_group_id": 1000, "ansible_swaptotal_mb": 0, "ansible_real_group_id": 1000, "ansible_bios_date": "04/01/2014", "ansible_all_ipv6_addresses": ["fe80::f816:3eff:feb6:b51c"], "ansible_interfaces": ["lo", "eth0"], "ansible_uptime_seconds": 14023, "ansible_machine_id": "df877a200226bc47d06f26dae0736ec9", "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDgLpbtS6EBzYr7t7V8aHn4gTWa6slK5lRykfADJoxf/61bEu8DYSsvQqU6SW3HRjL7/eQr+UjYIt3j/O0hdhV/UPKj89thQCG5SZLq2DycUwBNncjC0ri6gCZU5V+ZTmfahEhrtndXZUuhDypVVT3WhoMYWF6rM6588GeS0/C4JKZ2xd8Z6SwDrzNHxZRuSHp8XMZkSQFhRrxBx6dVgs/wjR0PfciuBQjsrnq3bhMNU7nFkzc5pzh2GlTmZkI5qO/fSLwt3z5zGaXm/Zay5fUBrFWNoQxwM/MUSppx05/n+xGmba3x/4V64097RyxsSvytE2Z/GaFa9Y5wE6M6dAr9", "ansible_gather_subset": ["hardware", "network", "virtual"], "ansible_user_gecos": "Cloud User", "ansible_system_capabilities_enforced": "True", "ansible_python": {"executable": "/usr/bin/python", "version": {"micro": 5, "major": 2, "releaselevel": "final", "serial": 0, "minor": 7}, "type": "CPython", "has_sslcontext": true, "version_info": [2, 7, 5, "final", 0]}, "ansible_machine": "x86_64", "ansible_processor_threads_per_core": 1, "ansible_fqdn": "ansible-jumphost", "ansible_user_gid": 1000, "ansible_eth0": {"macaddress": "fa:16:3e:b6:b5:1c", "features": {"tx_checksum_ipv4": "off [fixed]", "generic_receive_offload": "on", "tx_checksum_ipv6": "off [fixed]", "tx_scatter_gather_fraglist": "off [fixed]", "rx_all": "off [fixed]", "highdma": "on [fixed]", "rx_fcs": "off [fixed]", "tx_lockless": "off [fixed]", "tx_tcp_ecn_segmentation": "on", "tx_tcp6_segmentation": "on", "tx_gso_robust": "off [fixed]", "tx_ipip_segmentation": "off [fixed]", "tx_checksumming": "on", "vlan_challenged": "off [fixed]", "loopback": "off [fixed]", "fcoe_mtu": "off [fixed]", "scatter_gather": "on", "tx_checksum_sctp": "off [fixed]", "tx_vlan_stag_hw_insert": "off [fixed]", "rx_vlan_stag_hw_parse": "off [fixed]", "rx_vlan_stag_filter": "off [fixed]", "large_receive_offload": "off [fixed]", "tx_scatter_gather": "on", "rx_checksumming": "on [fixed]", "tx_tcp_segmentation": "on", "netns_local": "off [fixed]", "busy_poll": "off [fixed]", "generic_segmentation_offload": "on", "tx_udp_tnl_segmentation": "off [fixed]", "tcp_segmentation_offload": "on", "l2_fwd_offload": "off [fixed]", "rx_vlan_offload": "off [fixed]", "ntuple_filters": "off [fixed]", "tx_vlan_offload": "off [fixed]", "tx_nocache_copy": "off", "tx_mpls_segmentation": "off [fixed]", "udp_fragmentation_offload": "on", "tx_sctp_segmentation": "off [fixed]", "tx_sit_segmentation": "off [fixed]", "tx_checksum_fcoe_crc": "off [fixed]", "hw_tc_offload": "off [fixed]", "tx_checksum_ip_generic": "on", "tx_fcoe_segmentation": "off [fixed]", "rx_vlan_filter": "on [fixed]", "receive_hashing": "off [fixed]", "tx_gre_segmentation": "off [fixed]"}, "pciid": "virtio0", "module": "virtio_net", "mtu": 1450, "device": "eth0", "promisc": false, "ipv4": {"broadcast": "192.168.0.255", "netmask": "255.255.255.0", "network": "192.168.0.0", "address": "192.168.0.10"}, "ipv6": [{"scope": "link", "prefix": "64", "address": "fe80::f816:3eff:feb6:b51c"}], "active": true, "type": "ether"}, "ansible_nodename": "ansible-jumphost", "ansible_system": "Linux", "ansible_user_shell": "/bin/bash", "ansible_system_capabilities": [""], "ansible_all_ipv4_addresses": ["192.168.0.10"], "ansible_python_version": "2.7.5"}}\r\n', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\nShared connection to 38.145.32.184 closed.\r\n')
+  1342 1497263152.64044: _low_level_execute_command() done: rc=0, stdout=
+{"invocation": {"module_args": {"filter": "*", "gather_subset": ["all"], "fact_path": "/etc/ansible/facts.d", "gather_timeout": 10}}, "changed": false, "ansible_facts": {"ansible_product_serial": "NA", "ansible_form_factor": "Other", "ansible_product_version": "14.0.6-0.20170421215600.52a75c7.el7.centos", "ansible_fips": false, "ansible_service_mgr": "systemd", "ansible_user_id": "centos", "ansible_user_dir": "/home/centos", "ansible_memtotal_mb": 488, "ansible_ssh_host_key_ecdsa_public": "AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBN1SeqtjTTZLKS9P1LmiD8qqdLlN+bt4+9s8mJ0UCDqlYxkdQOK3KzECN4EW41ntHLg4enWf6tsdocSaQVnjdgg=", "ansible_distribution_version": "7.3.1611", "ansible_domain": "", "ansible_virtualization_type": "kvm", "ansible_ssh_host_key_ed25519_public": "AAAAC3NzaC1lZDI1NTE5AAAAIIy4QmPNuCn7hIQUFNRGIiYjzf2RzuHLEPjXZikKETJz", "ansible_processor_cores": 1, "ansible_virtualization_role": "host", "ansible_dns": {"nameservers": ["8.8.8.8"], "search": ["openstacklocal"]}, "ansible_processor_vcpus": 1, "ansible_bios_version": "1.9.1-5.el7_3.2", "ansible_processor": ["GenuineIntel", "Intel Core Processor (Haswell, no TSX)"], "ansible_date_time": {"weekday_number": "1", "iso8601_basic_short": "20170612T102552", "tz": "UTC", "weeknumber": "24", "hour": "10", "year": "2017", "minute": "25", "tz_offset": "+0000", "month": "06", "epoch": "1497263152", "iso8601_micro": "2017-06-12T10:25:52.457174Z", "weekday": "Monday", "time": "10:25:52", "date": "2017-06-12", "iso8601": "2017-06-12T10:25:52Z", "day": "12", "iso8601_basic": "20170612T102552457103", "second": "52"}, "ansible_lo": {"features": {"tx_checksum_ipv4": "off [fixed]", "generic_receive_offload": "on", "tx_checksum_ipv6": "off [fixed]", "tx_scatter_gather_fraglist": "on [fixed]", "rx_all": "off [fixed]", "highdma": "on [fixed]", "rx_fcs": "off [fixed]", "tx_lockless": "on [fixed]", "tx_tcp_ecn_segmentation": "on", "tx_tcp6_segmentation": "on", "tx_gso_robust": "off [fixed]", "tx_ipip_segmentation": "off [fixed]", "tx_checksumming": "on", "vlan_challenged": "on [fixed]", "loopback": "on [fixed]", "fcoe_mtu": "off [fixed]", "scatter_gather": "on", "tx_checksum_sctp": "on [fixed]", "tx_vlan_stag_hw_insert": "off [fixed]", "rx_vlan_stag_hw_parse": "off [fixed]", "rx_vlan_stag_filter": "off [fixed]", "large_receive_offload": "off [fixed]", "tx_scatter_gather": "on [fixed]", "rx_checksumming": "on [fixed]", "tx_tcp_segmentation": "on", "netns_local": "on [fixed]", "busy_poll": "off [fixed]", "generic_segmentation_offload": "on", "tx_udp_tnl_segmentation": "off [fixed]", "tcp_segmentation_offload": "on", "l2_fwd_offload": "off [fixed]", "rx_vlan_offload": "off [fixed]", "ntuple_filters": "off [fixed]", "tx_vlan_offload": "off [fixed]", "tx_nocache_copy": "off [fixed]", "tx_mpls_segmentation": "off [fixed]", "udp_fragmentation_offload": "on", "tx_sctp_segmentation": "on", "tx_sit_segmentation": "off [fixed]", "tx_checksum_fcoe_crc": "off [fixed]", "hw_tc_offload": "off [fixed]", "tx_checksum_ip_generic": "on [fixed]", "tx_fcoe_segmentation": "off [fixed]", "rx_vlan_filter": "off [fixed]", "receive_hashing": "off [fixed]", "tx_gre_segmentation": "off [fixed]"}, "mtu": 65536, "device": "lo", "promisc": false, "ipv4": {"broadcast": "host", "netmask": "255.0.0.0", "network": "127.0.0.0", "address": "127.0.0.1"}, "ipv6": [{"scope": "host", "prefix": "128", "address": "::1"}], "active": true, "type": "loopback"}, "ansible_userspace_bits": "64", "ansible_architecture": "x86_64", "ansible_real_user_id": 1000, "ansible_default_ipv4": {"macaddress": "fa:16:3e:b6:b5:1c", "network": "192.168.0.0", "mtu": 1450, "broadcast": "192.168.0.255", "alias": "eth0", "netmask": "255.255.255.0", "address": "192.168.0.10", "interface": "eth0", "type": "ether", "gateway": "192.168.0.1"}, "ansible_swapfree_mb": 0, "ansible_default_ipv6": {}, "ansible_distribution_release": "Core", "ansible_system_vendor": "RDO", "ansible_apparmor": {"status": "disabled"}, "ansible_cmdline": {"LANG": "en_US.UTF-8", "console": "ttyS0,115200", "crashkernel": "auto", "BOOT_IMAGE": "/boot/vmlinuz-3.10.0-514.10.2.el7.x86_64", "ro": true, "root": "UUID=0a84de8e-5bfe-43e7-992b-5bfff8cdce43"}, "ansible_effective_user_id": 1000, "ansible_mounts": [{"uuid": "0a84de8e-5bfe-43e7-992b-5bfff8cdce43", "size_total": 9644941312, "mount": "/", "size_available": 7948017664, "fstype": "xfs", "device": "/dev/vda1", "options": "rw,seclabel,relatime,attr2,inode64,noquota"}], "ansible_selinux": {"status": "enabled", "policyvers": 28, "type": "targeted", "mode": "enforcing", "config_mode": "enforcing"}, "ansible_os_family": "RedHat", "ansible_userspace_architecture": "x86_64", "ansible_product_uuid": "NA", "ansible_kernel": "3.10.0-514.10.2.el7.x86_64", "ansible_product_name": "OpenStack Compute", "ansible_pkg_mgr": "yum", "ansible_memfree_mb": 66, "ansible_devices": {"vda": {"scheduler_mode": "", "rotational": "1", "vendor": "0x1af4", "sectors": "18874368", "sas_device_handle": null, "sas_address": null, "host": "SCSI storage controller: Red Hat, Inc Virtio block device", "sectorsize": "512", "removable": "0", "support_discard": "0", "model": null, "partitions": {"vda1": {"sectorsize": 512, "uuid": "0a84de8e-5bfe-43e7-992b-5bfff8cdce43", "sectors": "18858262", "start": "2048", "holders": [], "size": "8.99 GB"}}, "holders": [], "size": "9.00 GB"}}, "ansible_user_uid": 1000, "ansible_memory_mb": {"real": {"total": 488, "used": 422, "free": 66}, "swap": {"cached": 0, "total": 0, "free": 0, "used": 0}, "nocache": {"used": 166, "free": 322}}, "ansible_distribution": "CentOS", "ansible_env": {"LESSOPEN": "||/usr/bin/lesspipe.sh %s", "SSH_CLIENT": "47.52.32.146 58438 22", "SELINUX_USE_CURRENT_RANGE": "", "LOGNAME": "centos", "USER": "centos", "PATH": "/usr/local/bin:/usr/bin", "HOME": "/home/centos", "LANG": "en_US.UTF-8", "TERM": "screen-256color", "SHELL": "/bin/bash", "SHLVL": "2", "XMODIFIERS": "@im=ibus", "XDG_RUNTIME_DIR": "/run/user/1000", "SELINUX_ROLE_REQUESTED": "", "XDG_SESSION_ID": "25", "_": "/usr/bin/python", "LS_COLORS": "rs=0:di=38;5;27:ln=38;5;51:mh=44;38;5;15:pi=40;38;5;11:so=38;5;13:do=38;5;5:bd=48;5;232;38;5;11:cd=48;5;232;38;5;3:or=48;5;232;38;5;9:mi=05;48;5;232;38;5;15:su=48;5;196;38;5;15:sg=48;5;11;38;5;16:ca=48;5;196;38;5;226:tw=48;5;10;38;5;16:ow=48;5;10;38;5;21:st=48;5;21;38;5;15:ex=38;5;34:*.tar=38;5;9:*.tgz=38;5;9:*.arc=38;5;9:*.arj=38;5;9:*.taz=38;5;9:*.lha=38;5;9:*.lz4=38;5;9:*.lzh=38;5;9:*.lzma=38;5;9:*.tlz=38;5;9:*.txz=38;5;9:*.tzo=38;5;9:*.t7z=38;5;9:*.zip=38;5;9:*.z=38;5;9:*.Z=38;5;9:*.dz=38;5;9:*.gz=38;5;9:*.lrz=38;5;9:*.lz=38;5;9:*.lzo=38;5;9:*.xz=38;5;9:*.bz2=38;5;9:*.bz=38;5;9:*.tbz=38;5;9:*.tbz2=38;5;9:*.tz=38;5;9:*.deb=38;5;9:*.rpm=38;5;9:*.jar=38;5;9:*.war=38;5;9:*.ear=38;5;9:*.sar=38;5;9:*.rar=38;5;9:*.alz=38;5;9:*.ace=38;5;9:*.zoo=38;5;9:*.cpio=38;5;9:*.7z=38;5;9:*.rz=38;5;9:*.cab=38;5;9:*.jpg=38;5;13:*.jpeg=38;5;13:*.gif=38;5;13:*.bmp=38;5;13:*.pbm=38;5;13:*.pgm=38;5;13:*.ppm=38;5;13:*.tga=38;5;13:*.xbm=38;5;13:*.xpm=38;5;13:*.tif=38;5;13:*.tiff=38;5;13:*.png=38;5;13:*.svg=38;5;13:*.svgz=38;5;13:*.mng=38;5;13:*.pcx=38;5;13:*.mov=38;5;13:*.mpg=38;5;13:*.mpeg=38;5;13:*.m2v=38;5;13:*.mkv=38;5;13:*.webm=38;5;13:*.ogm=38;5;13:*.mp4=38;5;13:*.m4v=38;5;13:*.mp4v=38;5;13:*.vob=38;5;13:*.qt=38;5;13:*.nuv=38;5;13:*.wmv=38;5;13:*.asf=38;5;13:*.rm=38;5;13:*.rmvb=38;5;13:*.flc=38;5;13:*.avi=38;5;13:*.fli=38;5;13:*.flv=38;5;13:*.gl=38;5;13:*.dl=38;5;13:*.xcf=38;5;13:*.xwd=38;5;13:*.yuv=38;5;13:*.cgm=38;5;13:*.emf=38;5;13:*.axv=38;5;13:*.anx=38;5;13:*.ogv=38;5;13:*.ogx=38;5;13:*.aac=38;5;45:*.au=38;5;45:*.flac=38;5;45:*.mid=38;5;45:*.midi=38;5;45:*.mka=38;5;45:*.mp3=38;5;45:*.mpc=38;5;45:*.ogg=38;5;45:*.ra=38;5;45:*.wav=38;5;45:*.axa=38;5;45:*.oga=38;5;45:*.spx=38;5;45:*.xspf=38;5;45:", "SSH_TTY": "/dev/pts/1", "SELINUX_LEVEL_REQUESTED": "", "PWD": "/home/centos", "MAIL": "/var/mail/centos", "OS_COMPUTE_API_VERSION": "2.32", "SSH_CONNECTION": "47.52.32.146 58438 192.168.0.10 22"}, "ansible_distribution_major_version": "7", "module_setup": true, "ansible_processor_count": 1, "ansible_hostname": "ansible-jumphost", "ansible_effective_group_id": 1000, "ansible_swaptotal_mb": 0, "ansible_real_group_id": 1000, "ansible_bios_date": "04/01/2014", "ansible_all_ipv6_addresses": ["fe80::f816:3eff:feb6:b51c"], "ansible_interfaces": ["lo", "eth0"], "ansible_uptime_seconds": 14023, "ansible_machine_id": "df877a200226bc47d06f26dae0736ec9", "ansible_ssh_host_key_rsa_public": "AAAAB3NzaC1yc2EAAAADAQABAAABAQDgLpbtS6EBzYr7t7V8aHn4gTWa6slK5lRykfADJoxf/61bEu8DYSsvQqU6SW3HRjL7/eQr+UjYIt3j/O0hdhV/UPKj89thQCG5SZLq2DycUwBNncjC0ri6gCZU5V+ZTmfahEhrtndXZUuhDypVVT3WhoMYWF6rM6588GeS0/C4JKZ2xd8Z6SwDrzNHxZRuSHp8XMZkSQFhRrxBx6dVgs/wjR0PfciuBQjsrnq3bhMNU7nFkzc5pzh2GlTmZkI5qO/fSLwt3z5zGaXm/Zay5fUBrFWNoQxwM/MUSppx05/n+xGmba3x/4V64097RyxsSvytE2Z/GaFa9Y5wE6M6dAr9", "ansible_gather_subset": ["hardware", "network", "virtual"], "ansible_user_gecos": "Cloud User", "ansible_system_capabilities_enforced": "True", "ansible_python": {"executable": "/usr/bin/python", "version": {"micro": 5, "major": 2, "releaselevel": "final", "serial": 0, "minor": 7}, "type": "CPython", "has_sslcontext": true, "version_info": [2, 7, 5, "final", 0]}, "ansible_machine": "x86_64", "ansible_processor_threads_per_core": 1, "ansible_fqdn": "ansible-jumphost", "ansible_user_gid": 1000, "ansible_eth0": {"macaddress": "fa:16:3e:b6:b5:1c", "features": {"tx_checksum_ipv4": "off [fixed]", "generic_receive_offload": "on", "tx_checksum_ipv6": "off [fixed]", "tx_scatter_gather_fraglist": "off [fixed]", "rx_all": "off [fixed]", "highdma": "on [fixed]", "rx_fcs": "off [fixed]", "tx_lockless": "off [fixed]", "tx_tcp_ecn_segmentation": "on", "tx_tcp6_segmentation": "on", "tx_gso_robust": "off [fixed]", "tx_ipip_segmentation": "off [fixed]", "tx_checksumming": "on", "vlan_challenged": "off [fixed]", "loopback": "off [fixed]", "fcoe_mtu": "off [fixed]", "scatter_gather": "on", "tx_checksum_sctp": "off [fixed]", "tx_vlan_stag_hw_insert": "off [fixed]", "rx_vlan_stag_hw_parse": "off [fixed]", "rx_vlan_stag_filter": "off [fixed]", "large_receive_offload": "off [fixed]", "tx_scatter_gather": "on", "rx_checksumming": "on [fixed]", "tx_tcp_segmentation": "on", "netns_local": "off [fixed]", "busy_poll": "off [fixed]", "generic_segmentation_offload": "on", "tx_udp_tnl_segmentation": "off [fixed]", "tcp_segmentation_offload": "on", "l2_fwd_offload": "off [fixed]", "rx_vlan_offload": "off [fixed]", "ntuple_filters": "off [fixed]", "tx_vlan_offload": "off [fixed]", "tx_nocache_copy": "off", "tx_mpls_segmentation": "off [fixed]", "udp_fragmentation_offload": "on", "tx_sctp_segmentation": "off [fixed]", "tx_sit_segmentation": "off [fixed]", "tx_checksum_fcoe_crc": "off [fixed]", "hw_tc_offload": "off [fixed]", "tx_checksum_ip_generic": "on", "tx_fcoe_segmentation": "off [fixed]", "rx_vlan_filter": "on [fixed]", "receive_hashing": "off [fixed]", "tx_gre_segmentation": "off [fixed]"}, "pciid": "virtio0", "module": "virtio_net", "mtu": 1450, "device": "eth0", "promisc": false, "ipv4": {"broadcast": "192.168.0.255", "netmask": "255.255.255.0", "network": "192.168.0.0", "address": "192.168.0.10"}, "ipv6": [{"scope": "link", "prefix": "64", "address": "fe80::f816:3eff:feb6:b51c"}], "active": true, "type": "ether"}, "ansible_nodename": "ansible-jumphost", "ansible_system": "Linux", "ansible_user_shell": "/bin/bash", "ansible_system_capabilities": [""], "ansible_all_ipv4_addresses": ["192.168.0.10"], "ansible_python_version": "2.7.5"}}
+, stderr=OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+debug1: mux_client_request_session: master session id: 2
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+Shared connection to 38.145.32.184 closed.
+  1342 1497263152.64398: done with _execute_module (setup, {'_ansible_version': '2.3.1.0', '_ansible_selinux_special_fs': [u'fuse', u'nfs', u'vboxsf', u'ramfs', u'9p'], '_ansible_no_log': False, 'gather_timeout': 10, '_ansible_module_name': u'setup', '_ansible_verbosity': 4, '_ansible_syslog_facility': u'LOG_USER', '_ansible_socket': None, 'gather_subset': u'all', '_ansible_diff': False, '_ansible_debug': True, '_ansible_check_mode': False})
+  1342 1497263152.64409: handler run complete
+  1342 1497263152.64417: attempt loop complete, returning result
+  1342 1497263152.64423: _execute() done
+  1342 1497263152.64426: dumping result to json
+  1342 1497263152.64497: done dumping result, returning
+  1342 1497263152.64526: done running TaskExecutor() for 38.145.32.184/TASK: Gathering Facts
+  1342 1497263152.64556: sending task result
+  1342 1497263152.64656: done sending task result
+  1342 1497263152.64665: WORKER PROCESS EXITING
+ok: [38.145.32.184]
+  1335 1497263152.65463: no more pending results, returning what we have
+  1335 1497263152.65476: results queue empty
+  1335 1497263152.65480: checking for any_errors_fatal
+  1335 1497263152.65484: done checking for any_errors_fatal
+  1335 1497263152.65487: checking for max_fail_percentage
+  1335 1497263152.65489: done checking for max_fail_percentage
+  1335 1497263152.65491: checking to see if all hosts have failed and the running result is not ok
+  1335 1497263152.65493: done checking to see if all hosts have failed
+  1335 1497263152.65495: getting the remaining hosts for this loop
+  1335 1497263152.65500: done getting the remaining hosts for this loop
+  1335 1497263152.65505: building list of next tasks for hosts
+  1335 1497263152.65508: getting the next task for host 38.145.32.184
+  1335 1497263152.65513: done getting next task for host 38.145.32.184
+  1335 1497263152.65517:  ^ task is: TASK: meta (flush_handlers)
+  1335 1497263152.65520:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+  1335 1497263152.65523: done building task lists
+  1335 1497263152.65524: counting tasks in each state of execution
+  1335 1497263152.65527: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+  1335 1497263152.65529: advancing hosts in ITERATING_TASKS
+  1335 1497263152.65531: starting to advance hosts
+  1335 1497263152.65533: getting the next task for host 38.145.32.184
+  1335 1497263152.65537: done getting next task for host 38.145.32.184
+  1335 1497263152.65540:  ^ task is: TASK: meta (flush_handlers)
+  1335 1497263152.65543:  ^ state is: HOST STATE: block=1, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+  1335 1497263152.65546: done advancing hosts to next task
+META: ran handlers
+  1335 1497263152.65558: done queuing things up, now waiting for results queue to drain
+  1335 1497263152.65562: results queue empty
+  1335 1497263152.65565: checking for any_errors_fatal
+  1335 1497263152.65567: done checking for any_errors_fatal
+  1335 1497263152.65569: checking for max_fail_percentage
+  1335 1497263152.65571: done checking for max_fail_percentage
+  1335 1497263152.65572: checking to see if all hosts have failed and the running result is not ok
+  1335 1497263152.65574: done checking to see if all hosts have failed
+  1335 1497263152.65575: getting the remaining hosts for this loop
+  1335 1497263152.65579: done getting the remaining hosts for this loop
+  1335 1497263152.65584: building list of next tasks for hosts
+  1335 1497263152.65586: getting the next task for host 38.145.32.184
+  1335 1497263152.65589: done getting next task for host 38.145.32.184
+  1335 1497263152.65594:  ^ task is: TASK: rdocloud2 : Instantiate a VM into RDO cloud
+  1335 1497263152.65596:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+  1335 1497263152.65598: done building task lists
+  1335 1497263152.65600: counting tasks in each state of execution
+  1335 1497263152.65602: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+  1335 1497263152.65604: advancing hosts in ITERATING_TASKS
+  1335 1497263152.65605: starting to advance hosts
+  1335 1497263152.65607: getting the next task for host 38.145.32.184
+  1335 1497263152.65611: done getting next task for host 38.145.32.184
+  1335 1497263152.65614:  ^ task is: TASK: rdocloud2 : Instantiate a VM into RDO cloud
+  1335 1497263152.65616:  ^ state is: HOST STATE: block=2, task=1, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+  1335 1497263152.65618: done advancing hosts to next task
+  1335 1497263152.65624: getting variables
+  1335 1497263152.65626: in VariableManager get_vars()
+  1335 1497263152.65663: Loading FilterModule 'core' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+  1335 1497263152.65667: Loading FilterModule 'ipaddr' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+  1335 1497263152.65669: Loading FilterModule 'json_query' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+  1335 1497263152.65672: Loading FilterModule 'mathstuff' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+  1335 1497263152.65688: Loading TestModule 'core' from /usr/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+  1335 1497263152.65691: Loading TestModule 'files' from /usr/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+  1335 1497263152.65693: Loading TestModule 'mathstuff' from /usr/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+  1335 1497263152.65854: done with get_vars()
+  1335 1497263152.65866: done getting variables
+  1335 1497263152.65871: sending task start callback, copying the task so we can template it temporarily
+  1335 1497263152.65873: done copying, going to template now
+  1335 1497263152.65876: done templating
+  1335 1497263152.65877: here goes the callback...
+
+TASK [rdocloud2 : Instantiate a VM into RDO cloud] ************************************************************************************
+task path: /home/rnoriega/workspace/ansible-vnf/roles/rdocloud2/tasks/main.yml:2
+  1335 1497263152.65887: sending task start callback
+  1335 1497263152.65889: entering _queue_task() for 38.145.32.184/command
+  1335 1497263152.65891: Creating lock for command
+  1335 1497263152.66003: worker is 1 (out of 1 available)
+  1335 1497263152.66026: exiting _queue_task() for 38.145.32.184/command
+  1335 1497263152.66036: done queuing things up, now waiting for results queue to drain
+  1335 1497263152.66039: waiting for pending results...
+  1358 1497263152.66501: running TaskExecutor() for 38.145.32.184/TASK: rdocloud2 : Instantiate a VM into RDO cloud
+  1358 1497263152.66650: in run()
+  1358 1497263152.66745: calling self._execute()
+  1358 1497263152.67498: Loading Connection 'ssh' from /usr/lib/python2.7/site-packages/ansible/plugins/connection/ssh.py
+  1358 1497263152.67545: Loading ShellModule 'csh' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/csh.py
+  1358 1497263152.67571: Loading ShellModule 'fish' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/fish.py
+  1358 1497263152.67595: Loading ShellModule 'powershell' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/powershell.py
+  1358 1497263152.67607: Loading ShellModule 'sh' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/sh.py
+  1358 1497263152.67625: Loading ShellModule 'sh' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+  1358 1497263152.67650: Loading ActionModule 'normal' from /usr/lib/python2.7/site-packages/ansible/plugins/action/normal.py
+  1358 1497263152.67659: starting attempt loop
+  1358 1497263152.67662: running the handler
+  1358 1497263152.67799: ANSIBALLZ: Using lock for command
+  1358 1497263152.67818: ANSIBALLZ: Acquiring lock
+  1358 1497263152.67832: ANSIBALLZ: Lock acquired: 140210507265168
+  1358 1497263152.67845: ANSIBALLZ: Creating module
+  1358 1497263152.79018: ANSIBALLZ: Writing module
+  1358 1497263152.79038: ANSIBALLZ: Renaming module
+  1358 1497263152.79047: ANSIBALLZ: Done creating module
+Using module file /usr/lib/python2.7/site-packages/ansible/modules/commands/command.py
+  1358 1497263152.79102: _low_level_execute_command(): starting
+  1358 1497263152.79108: _low_level_execute_command(): executing: /bin/sh -c 'echo ~ && sleep 0'
+<38.145.32.184> ESTABLISH SSH CONNECTION FOR USER: centos
+<38.145.32.184> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 38.145.32.184 '/bin/sh -c '"'"'echo ~ && sleep 0'"'"''
+  1358 1497263152.80603: stderr chunk (state=2):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+<<<
+  1358 1497263152.80645: stderr chunk (state=3):
+>>>debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+<<<
+  1358 1497263152.80652: stderr chunk (state=3):
+>>>debug2: fd 3 setting O_NONBLOCK
+<<<
+  1358 1497263152.80659: stderr chunk (state=3):
+>>>debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+<<<
+  1358 1497263152.80668: stderr chunk (state=3):
+>>>debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+<<<
+  1358 1497263153.05277: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1358 1497263153.30645: stdout chunk (state=3):
+>>>/home/centos
+<<<
+  1358 1497263153.30665: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+  1358 1497263153.30706: stderr chunk (state=3):
+>>><<<
+  1358 1497263153.30716: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, '/home/centos\n', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+  1358 1497263153.30740: _low_level_execute_command() done: rc=0, stdout=/home/centos
+, stderr=OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+debug1: mux_client_request_session: master session id: 2
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+  1358 1497263153.30750: _low_level_execute_command(): starting
+  1358 1497263153.30755: _low_level_execute_command(): executing: /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888 `" && echo ansible-tmp-1497263152.79-79845454230888="` echo /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888 `" ) && sleep 0'
+<38.145.32.184> ESTABLISH SSH CONNECTION FOR USER: centos
+<38.145.32.184> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 38.145.32.184 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888 `" && echo ansible-tmp-1497263152.79-79845454230888="` echo /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888 `" ) && sleep 0'"'"''
+  1358 1497263153.31960: stderr chunk (state=2):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+<<<
+  1358 1497263153.32072: stderr chunk (state=3):
+>>>debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+<<<
+  1358 1497263153.32142: stderr chunk (state=3):
+>>>debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+<<<
+  1358 1497263153.56825: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1358 1497263153.82527: stdout chunk (state=3):
+>>>ansible-tmp-1497263152.79-79845454230888=/home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888
+<<<
+  1358 1497263153.82557: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+  1358 1497263153.82602: stderr chunk (state=3):
+>>><<<
+  1358 1497263153.82610: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, 'ansible-tmp-1497263152.79-79845454230888=/home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888\n', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+  1358 1497263153.82633: _low_level_execute_command() done: rc=0, stdout=ansible-tmp-1497263152.79-79845454230888=/home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888
+, stderr=OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+debug1: mux_client_request_session: master session id: 2
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+  1358 1497263153.82641: transferring module to remote /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/command.py
+<38.145.32.184> PUT /tmp/tmpj2brGQ TO /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/command.py
+<38.145.32.184> SSH: EXEC sftp -b - -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 '[38.145.32.184]'
+  1358 1497263153.83489: Sending initial data
+  1358 1497263153.83523: Sent initial data (97 bytes)
+  1358 1497263153.84470: stderr chunk (state=3):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1358 1497263153.84485: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+<<<
+  1358 1497263153.84496: stderr chunk (state=3):
+>>>debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+<<<
+  1358 1497263154.09547: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1358 1497263154.68513: stderr chunk (state=3):
+>>>debug2: Remote version: 3
+debug2: Server supports extension "posix-rename@openssh.com" revision 1
+debug2: Server supports extension "statvfs@openssh.com" revision 2
+debug2: Server supports extension "fstatvfs@openssh.com" revision 2
+debug2: Server supports extension "hardlink@openssh.com" revision 1
+debug2: Server supports extension "fsync@openssh.com" revision 1
+debug3: Sent message fd 5 T:16 I:1
+<<<
+  1358 1497263154.99237: stderr chunk (state=3):
+>>>debug3: SSH_FXP_REALPATH . -> /home/centos size 0
+<<<
+  1358 1497263154.99251: stderr chunk (state=3):
+>>>debug3: Looking up /tmp/tmpj2brGQ
+debug3: Sent message fd 5 T:17 I:2
+<<<
+  1358 1497263154.99255: stdout chunk (state=3):
+>>>sftp> put /tmp/tmpj2brGQ /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/command.py
+<<<
+  1358 1497263155.30611: stderr chunk (state=3):
+>>>debug3: Received stat reply T:101 I:2
+debug1: Couldn't stat remote file: No such file or directory
+debug3: Sent message SSH2_FXP_OPEN I:3 P:/home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/command.py
+<<<
+  1358 1497263155.55516: stderr chunk (state=3):
+>>>debug3: Sent message SSH2_FXP_WRITE I:4 O:0 S:32768
+<<<
+  1358 1497263155.85745: stderr chunk (state=3):
+>>>debug3: SSH2_FXP_STATUS 0
+debug3: In write loop, ack for 4 32768 bytes at 0
+<<<
+  1358 1497263155.85757: stderr chunk (state=3):
+>>>debug3: Sent message SSH2_FXP_WRITE I:5 O:32768 S:25555
+<<<
+  1358 1497263156.14603: stderr chunk (state=3):
+>>>debug3: SSH2_FXP_STATUS 0
+debug3: In write loop, ack for 5 25555 bytes at 32768
+debug3: Sent message SSH2_FXP_CLOSE I:4
+<<<
+  1358 1497263156.39791: stderr chunk (state=3):
+>>>debug3: SSH2_FXP_STATUS 0
+<<<
+  1358 1497263156.64788: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+  1358 1497263156.64871: stderr chunk (state=3):
+>>><<<
+  1358 1497263156.64883: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, 'sftp> put /tmp/tmpj2brGQ /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/command.py\n', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug2: Remote version: 3\r\ndebug2: Server supports extension "posix-rename@openssh.com" revision 1\r\ndebug2: Server supports extension "statvfs@openssh.com" revision 2\r\ndebug2: Server supports extension "fstatvfs@openssh.com" revision 2\r\ndebug2: Server supports extension "hardlink@openssh.com" revision 1\r\ndebug2: Server supports extension "fsync@openssh.com" revision 1\r\ndebug3: Sent message fd 5 T:16 I:1\r\ndebug3: SSH_FXP_REALPATH . -> /home/centos size 0\r\ndebug3: Looking up /tmp/tmpj2brGQ\r\ndebug3: Sent message fd 5 T:17 I:2\r\ndebug3: Received stat reply T:101 I:2\r\ndebug1: Couldn\'t stat remote file: No such file or directory\r\ndebug3: Sent message SSH2_FXP_OPEN I:3 P:/home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/command.py\r\ndebug3: Sent message SSH2_FXP_WRITE I:4 O:0 S:32768\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: In write loop, ack for 4 32768 bytes at 0\r\ndebug3: Sent message SSH2_FXP_WRITE I:5 O:32768 S:25555\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: In write loop, ack for 5 25555 bytes at 32768\r\ndebug3: Sent message SSH2_FXP_CLOSE I:4\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+  1358 1497263156.64916: done transferring module to remote
+  1358 1497263156.64947: _low_level_execute_command(): starting
+  1358 1497263156.64955: _low_level_execute_command(): executing: /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/ /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/command.py && sleep 0'
+<38.145.32.184> ESTABLISH SSH CONNECTION FOR USER: centos
+<38.145.32.184> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 38.145.32.184 '/bin/sh -c '"'"'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/ /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/command.py && sleep 0'"'"''
+  1358 1497263156.65975: stderr chunk (state=2):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1358 1497263156.65997: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+<<<
+  1358 1497263156.93811: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1358 1497263157.24598: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+  1358 1497263157.24633: stderr chunk (state=3):
+>>><<<
+  1358 1497263157.24638: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, '', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+  1358 1497263157.24660: _low_level_execute_command() done: rc=0, stdout=, stderr=OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+debug1: mux_client_request_session: master session id: 2
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+  1358 1497263157.24668: _low_level_execute_command(): starting
+  1358 1497263157.24677: _low_level_execute_command(): executing: /bin/sh -c '/usr/bin/python /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/command.py; rm -rf "/home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/" > /dev/null 2>&1 && sleep 0'
+<38.145.32.184> ESTABLISH SSH CONNECTION FOR USER: centos
+<38.145.32.184> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 -tt 38.145.32.184 '/bin/sh -c '"'"'/usr/bin/python /home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/command.py; rm -rf "/home/centos/.ansible/tmp/ansible-tmp-1497263152.79-79845454230888/" > /dev/null 2>&1 && sleep 0'"'"''
+  1358 1497263157.25504: stderr chunk (state=2):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1358 1497263157.25523: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+<<<
+  1358 1497263157.25534: stderr chunk (state=3):
+>>>debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+<<<
+  1358 1497263157.55250: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1358 1497263157.89777: stdout chunk (state=3):
+>>>
+{"changed": true, "end": "2017-06-12 10:25:57.778986", "stdout": "Please enter your OpenStack Password for project rnoriega as user rnoriega: ", "cmd": "source /home/centos/openrc", "rc": 0, "start": "2017-06-12 10:25:57.775752", "stderr": "", "delta": "0:00:00.003234", "invocation": {"module_args": {"warn": true, "executable": null, "_uses_shell": true, "_raw_params": "source /home/centos/openrc", "removes": null, "creates": null, "chdir": null}}, "warnings": []}
+<<<
+  1358 1497263157.90363: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+Shared connection to 38.145.32.184 closed.
+<<<
+  1358 1497263157.90399: stderr chunk (state=3):
+>>><<<
+  1358 1497263157.90404: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, '\r\n{"changed": true, "end": "2017-06-12 10:25:57.778986", "stdout": "Please enter your OpenStack Password for project rnoriega as user rnoriega: ", "cmd": "source /home/centos/openrc", "rc": 0, "start": "2017-06-12 10:25:57.775752", "stderr": "", "delta": "0:00:00.003234", "invocation": {"module_args": {"warn": true, "executable": null, "_uses_shell": true, "_raw_params": "source /home/centos/openrc", "removes": null, "creates": null, "chdir": null}}, "warnings": []}\r\n', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\nShared connection to 38.145.32.184 closed.\r\n')
+  1358 1497263157.90428: _low_level_execute_command() done: rc=0, stdout=
+{"changed": true, "end": "2017-06-12 10:25:57.778986", "stdout": "Please enter your OpenStack Password for project rnoriega as user rnoriega: ", "cmd": "source /home/centos/openrc", "rc": 0, "start": "2017-06-12 10:25:57.775752", "stderr": "", "delta": "0:00:00.003234", "invocation": {"module_args": {"warn": true, "executable": null, "_uses_shell": true, "_raw_params": "source /home/centos/openrc", "removes": null, "creates": null, "chdir": null}}, "warnings": []}
+, stderr=OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+debug1: mux_client_request_session: master session id: 2
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+Shared connection to 38.145.32.184 closed.
+  1358 1497263157.90447: done with _execute_module (command, {'_ansible_version': '2.3.1.0', '_uses_shell': True, '_ansible_no_log': False, '_ansible_module_name': u'command', u'_raw_params': u'source /home/centos/openrc', '_ansible_verbosity': 4, '_ansible_syslog_facility': u'LOG_USER', '_ansible_socket': None, '_ansible_selinux_special_fs': [u'fuse', u'nfs', u'vboxsf', u'ramfs', u'9p'], '_ansible_diff': False, '_ansible_debug': True, '_ansible_check_mode': False})
+  1358 1497263157.90457: handler run complete
+  1358 1497263157.90464: attempt loop complete, returning result
+  1358 1497263157.90471: _execute() done
+  1358 1497263157.90474: dumping result to json
+  1358 1497263157.90479: done dumping result, returning
+  1358 1497263157.90489: done running TaskExecutor() for 38.145.32.184/TASK: rdocloud2 : Instantiate a VM into RDO cloud
+  1358 1497263157.90500: sending task result
+  1358 1497263157.90534: done sending task result
+  1358 1497263157.90538: WORKER PROCESS EXITING
+changed: [38.145.32.184] => {
+    "changed": true, 
+    "cmd": "source /home/centos/openrc", 
+    "delta": "0:00:00.003234", 
+    "end": "2017-06-12 10:25:57.778986", 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "source /home/centos/openrc", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }
+    }, 
+    "rc": 0, 
+    "start": "2017-06-12 10:25:57.775752", 
+    "stderr": "", 
+    "stderr_lines": [], 
+    "stdout": "Please enter your OpenStack Password for project rnoriega as user rnoriega: ", 
+    "stdout_lines": [
+        "Please enter your OpenStack Password for project rnoriega as user rnoriega: "
+    ]
+}
+  1335 1497263157.90672: no more pending results, returning what we have
+  1335 1497263157.90677: results queue empty
+  1335 1497263157.90680: checking for any_errors_fatal
+  1335 1497263157.90683: done checking for any_errors_fatal
+  1335 1497263157.90685: checking for max_fail_percentage
+  1335 1497263157.90689: done checking for max_fail_percentage
+  1335 1497263157.90691: checking to see if all hosts have failed and the running result is not ok
+  1335 1497263157.90693: done checking to see if all hosts have failed
+  1335 1497263157.90695: getting the remaining hosts for this loop
+  1335 1497263157.90700: done getting the remaining hosts for this loop
+  1335 1497263157.90704: building list of next tasks for hosts
+  1335 1497263157.90707: getting the next task for host 38.145.32.184
+  1335 1497263157.90712: done getting next task for host 38.145.32.184
+  1335 1497263157.90717:  ^ task is: TASK: rdocloud2 : Idem
+  1335 1497263157.90720:  ^ state is: HOST STATE: block=2, task=2, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+  1335 1497263157.90722: done building task lists
+  1335 1497263157.90724: counting tasks in each state of execution
+  1335 1497263157.90726: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 1
+	num_rescue: 0
+	num_always: 0
+  1335 1497263157.90729: advancing hosts in ITERATING_TASKS
+  1335 1497263157.90730: starting to advance hosts
+  1335 1497263157.90732: getting the next task for host 38.145.32.184
+  1335 1497263157.90736: done getting next task for host 38.145.32.184
+  1335 1497263157.90739:  ^ task is: TASK: rdocloud2 : Idem
+  1335 1497263157.90741:  ^ state is: HOST STATE: block=2, task=2, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+  1335 1497263157.90743: done advancing hosts to next task
+  1335 1497263157.90752: getting variables
+  1335 1497263157.90755: in VariableManager get_vars()
+  1335 1497263157.90805: Loading FilterModule 'core' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/core.py (found_in_cache=True, class_only=False)
+  1335 1497263157.90809: Loading FilterModule 'ipaddr' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/ipaddr.py (found_in_cache=True, class_only=False)
+  1335 1497263157.90812: Loading FilterModule 'json_query' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/json_query.py (found_in_cache=True, class_only=False)
+  1335 1497263157.90815: Loading FilterModule 'mathstuff' from /usr/lib/python2.7/site-packages/ansible/plugins/filter/mathstuff.py (found_in_cache=True, class_only=False)
+  1335 1497263157.90832: Loading TestModule 'core' from /usr/lib/python2.7/site-packages/ansible/plugins/test/core.py (found_in_cache=True, class_only=False)
+  1335 1497263157.90835: Loading TestModule 'files' from /usr/lib/python2.7/site-packages/ansible/plugins/test/files.py (found_in_cache=True, class_only=False)
+  1335 1497263157.90837: Loading TestModule 'mathstuff' from /usr/lib/python2.7/site-packages/ansible/plugins/test/mathstuff.py (found_in_cache=True, class_only=False)
+  1335 1497263157.91008: done with get_vars()
+  1335 1497263157.91019: done getting variables
+  1335 1497263157.91024: sending task start callback, copying the task so we can template it temporarily
+  1335 1497263157.91026: done copying, going to template now
+  1335 1497263157.91028: done templating
+  1335 1497263157.91030: here goes the callback...
+
+TASK [rdocloud2 : Idem] ***************************************************************************************************************
+task path: /home/rnoriega/workspace/ansible-vnf/roles/rdocloud2/tasks/main.yml:4
+  1335 1497263157.91039: sending task start callback
+  1335 1497263157.91041: entering _queue_task() for 38.145.32.184/command
+  1335 1497263157.91162: worker is 1 (out of 1 available)
+  1335 1497263157.91186: exiting _queue_task() for 38.145.32.184/command
+  1335 1497263157.91197: done queuing things up, now waiting for results queue to drain
+  1335 1497263157.91202: waiting for pending results...
+  1368 1497263157.91495: running TaskExecutor() for 38.145.32.184/TASK: rdocloud2 : Idem
+  1368 1497263157.91545: in run()
+  1368 1497263157.91590: calling self._execute()
+  1368 1497263157.92048: Loading Connection 'ssh' from /usr/lib/python2.7/site-packages/ansible/plugins/connection/ssh.py
+  1368 1497263157.92094: Loading ShellModule 'csh' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/csh.py
+  1368 1497263157.92120: Loading ShellModule 'fish' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/fish.py
+  1368 1497263157.92145: Loading ShellModule 'powershell' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/powershell.py
+  1368 1497263157.92157: Loading ShellModule 'sh' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/sh.py
+  1368 1497263157.92177: Loading ShellModule 'sh' from /usr/lib/python2.7/site-packages/ansible/plugins/shell/sh.py (found_in_cache=True, class_only=False)
+  1368 1497263157.92203: Loading ActionModule 'normal' from /usr/lib/python2.7/site-packages/ansible/plugins/action/normal.py
+  1368 1497263157.92211: starting attempt loop
+  1368 1497263157.92214: running the handler
+  1368 1497263157.92236: ANSIBALLZ: using cached module: /home/rnoriega/.ansible/tmp/ansible-local-1335gh4mfd/ansiballz_cache/command-ZIP_DEFLATED
+Using module file /usr/lib/python2.7/site-packages/ansible/modules/commands/command.py
+  1368 1497263157.92301: _low_level_execute_command(): starting
+  1368 1497263157.92306: _low_level_execute_command(): executing: /bin/sh -c 'echo ~ && sleep 0'
+<38.145.32.184> ESTABLISH SSH CONNECTION FOR USER: centos
+<38.145.32.184> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 38.145.32.184 '/bin/sh -c '"'"'echo ~ && sleep 0'"'"''
+  1368 1497263157.93066: stderr chunk (state=2):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1368 1497263157.93082: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+<<<
+  1368 1497263158.26976: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1368 1497263158.57683: stdout chunk (state=3):
+>>>/home/centos
+<<<
+  1368 1497263158.57709: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+  1368 1497263158.57748: stderr chunk (state=3):
+>>><<<
+  1368 1497263158.57754: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, '/home/centos\n', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+  1368 1497263158.57779: _low_level_execute_command() done: rc=0, stdout=/home/centos
+, stderr=OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+debug1: mux_client_request_session: master session id: 2
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+  1368 1497263158.57788: _low_level_execute_command(): starting
+  1368 1497263158.57793: _low_level_execute_command(): executing: /bin/sh -c '( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201 `" && echo ansible-tmp-1497263157.92-186291435485201="` echo /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201 `" ) && sleep 0'
+<38.145.32.184> ESTABLISH SSH CONNECTION FOR USER: centos
+<38.145.32.184> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 38.145.32.184 '/bin/sh -c '"'"'( umask 77 && mkdir -p "` echo /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201 `" && echo ansible-tmp-1497263157.92-186291435485201="` echo /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201 `" ) && sleep 0'"'"''
+  1368 1497263158.58555: stderr chunk (state=2):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1368 1497263158.58576: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+<<<
+  1368 1497263158.58587: stderr chunk (state=3):
+>>>debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+<<<
+  1368 1497263158.88418: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1368 1497263159.13997: stdout chunk (state=3):
+>>>ansible-tmp-1497263157.92-186291435485201=/home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201
+<<<
+  1368 1497263159.14257: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+  1368 1497263159.14293: stderr chunk (state=3):
+>>><<<
+  1368 1497263159.14299: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, 'ansible-tmp-1497263157.92-186291435485201=/home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201\n', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+  1368 1497263159.14320: _low_level_execute_command() done: rc=0, stdout=ansible-tmp-1497263157.92-186291435485201=/home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201
+, stderr=OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+debug1: mux_client_request_session: master session id: 2
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+  1368 1497263159.14329: transferring module to remote /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/command.py
+<38.145.32.184> PUT /tmp/tmp_2HKwv TO /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/command.py
+<38.145.32.184> SSH: EXEC sftp -b - -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 '[38.145.32.184]'
+  1368 1497263159.14806: Sending initial data
+  1368 1497263159.14819: Sent initial data (98 bytes)
+  1368 1497263159.15385: stderr chunk (state=3):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1368 1497263159.15401: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+<<<
+  1368 1497263159.15411: stderr chunk (state=3):
+>>>debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+<<<
+  1368 1497263159.15419: stderr chunk (state=3):
+>>>debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+<<<
+  1368 1497263159.49801: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1368 1497263160.11990: stderr chunk (state=3):
+>>>debug2: Remote version: 3
+debug2: Server supports extension "posix-rename@openssh.com" revision 1
+debug2: Server supports extension "statvfs@openssh.com" revision 2
+debug2: Server supports extension "fstatvfs@openssh.com" revision 2
+debug2: Server supports extension "hardlink@openssh.com" revision 1
+debug2: Server supports extension "fsync@openssh.com" revision 1
+debug3: Sent message fd 5 T:16 I:1
+<<<
+  1368 1497263160.41980: stderr chunk (state=3):
+>>>debug3: SSH_FXP_REALPATH . -> /home/centos size 0
+debug3: Looking up /tmp/tmp_2HKwv
+<<<
+  1368 1497263160.41991: stderr chunk (state=3):
+>>>debug3: Sent message fd 5 T:17 I:2
+<<<
+  1368 1497263160.41996: stdout chunk (state=3):
+>>>sftp> put /tmp/tmp_2HKwv /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/command.py
+<<<
+  1368 1497263160.72682: stderr chunk (state=3):
+>>>debug3: Received stat reply T:101 I:2
+debug1: Couldn't stat remote file: No such file or directory
+debug3: Sent message SSH2_FXP_OPEN I:3 P:/home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/command.py
+<<<
+  1368 1497263161.13668: stderr chunk (state=3):
+>>>debug3: Sent message SSH2_FXP_WRITE I:4 O:0 S:32768
+<<<
+  1368 1497263161.44330: stderr chunk (state=3):
+>>>debug3: SSH2_FXP_STATUS 0
+debug3: In write loop, ack for 4 32768 bytes at 0
+debug3: Sent message SSH2_FXP_WRITE I:5 O:32768 S:25696
+<<<
+  1368 1497263161.72946: stderr chunk (state=3):
+>>>debug3: SSH2_FXP_STATUS 0
+debug3: In write loop, ack for 5 25696 bytes at 32768
+debug3: Sent message SSH2_FXP_CLOSE I:4
+<<<
+  1368 1497263162.05808: stderr chunk (state=3):
+>>>debug3: SSH2_FXP_STATUS 0
+<<<
+  1368 1497263162.36563: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+  1368 1497263162.36640: stderr chunk (state=3):
+>>><<<
+  1368 1497263162.36647: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, 'sftp> put /tmp/tmp_2HKwv /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/command.py\n', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug2: Remote version: 3\r\ndebug2: Server supports extension "posix-rename@openssh.com" revision 1\r\ndebug2: Server supports extension "statvfs@openssh.com" revision 2\r\ndebug2: Server supports extension "fstatvfs@openssh.com" revision 2\r\ndebug2: Server supports extension "hardlink@openssh.com" revision 1\r\ndebug2: Server supports extension "fsync@openssh.com" revision 1\r\ndebug3: Sent message fd 5 T:16 I:1\r\ndebug3: SSH_FXP_REALPATH . -> /home/centos size 0\r\ndebug3: Looking up /tmp/tmp_2HKwv\r\ndebug3: Sent message fd 5 T:17 I:2\r\ndebug3: Received stat reply T:101 I:2\r\ndebug1: Couldn\'t stat remote file: No such file or directory\r\ndebug3: Sent message SSH2_FXP_OPEN I:3 P:/home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/command.py\r\ndebug3: Sent message SSH2_FXP_WRITE I:4 O:0 S:32768\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: In write loop, ack for 4 32768 bytes at 0\r\ndebug3: Sent message SSH2_FXP_WRITE I:5 O:32768 S:25696\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: In write loop, ack for 5 25696 bytes at 32768\r\ndebug3: Sent message SSH2_FXP_CLOSE I:4\r\ndebug3: SSH2_FXP_STATUS 0\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+  1368 1497263162.36669: done transferring module to remote
+  1368 1497263162.36689: _low_level_execute_command(): starting
+  1368 1497263162.36694: _low_level_execute_command(): executing: /bin/sh -c 'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/ /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/command.py && sleep 0'
+<38.145.32.184> ESTABLISH SSH CONNECTION FOR USER: centos
+<38.145.32.184> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 38.145.32.184 '/bin/sh -c '"'"'chmod u+x /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/ /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/command.py && sleep 0'"'"''
+  1368 1497263162.37491: stderr chunk (state=2):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1368 1497263162.37509: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+<<<
+  1368 1497263162.37522: stderr chunk (state=3):
+>>>debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+<<<
+  1368 1497263163.08238: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1368 1497263163.39034: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+<<<
+  1368 1497263163.39074: stderr chunk (state=3):
+>>><<<
+  1368 1497263163.39080: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, '', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\n')
+  1368 1497263163.39100: _low_level_execute_command() done: rc=0, stdout=, stderr=OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+debug1: mux_client_request_session: master session id: 2
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+  1368 1497263163.39104: _low_level_execute_command(): starting
+  1368 1497263163.39111: _low_level_execute_command(): executing: /bin/sh -c '/usr/bin/python /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/command.py; rm -rf "/home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/" > /dev/null 2>&1 && sleep 0'
+<38.145.32.184> ESTABLISH SSH CONNECTION FOR USER: centos
+<38.145.32.184> SSH: EXEC ssh -vvv -C -o ControlMaster=auto -o ControlPersist=60s -o KbdInteractiveAuthentication=no -o PreferredAuthentications=gssapi-with-mic,gssapi-keyex,hostbased,publickey -o PasswordAuthentication=no -o User=centos -o ConnectTimeout=10 -o ControlPath=/home/rnoriega/.ansible/cp/14928f9d28 -tt 38.145.32.184 '/bin/sh -c '"'"'/usr/bin/python /home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/command.py; rm -rf "/home/centos/.ansible/tmp/ansible-tmp-1497263157.92-186291435485201/" > /dev/null 2>&1 && sleep 0'"'"''
+  1368 1497263163.39911: stderr chunk (state=2):
+>>>OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+<<<
+  1368 1497263163.39929: stderr chunk (state=3):
+>>>debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+<<<
+  1368 1497263163.39941: stderr chunk (state=3):
+>>>debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+<<<
+  1368 1497263163.64589: stderr chunk (state=3):
+>>>debug1: mux_client_request_session: master session id: 2
+<<<
+  1368 1497263164.28784: stdout chunk (state=3):
+>>>
+{"changed": true, "end": "2017-06-12 10:26:04.168937", "stdout": "", "cmd": "nova boot PEPE4 --flavor m1.small --image CentOS-7-x86_64-GenericCloud-1703 --security-groups default,devel --key-name macbook --nic net-name=private_network,tag=ricky", "rc": 1, "start": "2017-06-12 10:26:03.873250", "stderr": "ERROR (CommandError): You must provide a username or user ID via --os-username, --os-user-id, env[OS_USERNAME] or env[OS_USER_ID]", "delta": "0:00:00.295687", "invocation": {"module_args": {"warn": true, "executable": null, "_uses_shell": true, "_raw_params": "nova boot PEPE4 --flavor m1.small --image CentOS-7-x86_64-GenericCloud-1703 --security-groups default,devel --key-name macbook --nic net-name=private_network,tag=ricky", "removes": null, "creates": null, "chdir": null}}, "warnings": []}
+<<<
+  1368 1497263164.28920: stderr chunk (state=3):
+>>>debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+Shared connection to 38.145.32.184 closed.
+<<<
+  1368 1497263164.28958: stderr chunk (state=3):
+>>><<<
+  1368 1497263164.28966: stdout chunk (state=3):
+>>><<<
+<38.145.32.184> (0, '\r\n{"changed": true, "end": "2017-06-12 10:26:04.168937", "stdout": "", "cmd": "nova boot PEPE4 --flavor m1.small --image CentOS-7-x86_64-GenericCloud-1703 --security-groups default,devel --key-name macbook --nic net-name=private_network,tag=ricky", "rc": 1, "start": "2017-06-12 10:26:03.873250", "stderr": "ERROR (CommandError): You must provide a username or user ID via --os-username, --os-user-id, env[OS_USERNAME] or env[OS_USER_ID]", "delta": "0:00:00.295687", "invocation": {"module_args": {"warn": true, "executable": null, "_uses_shell": true, "_raw_params": "nova boot PEPE4 --flavor m1.small --image CentOS-7-x86_64-GenericCloud-1703 --security-groups default,devel --key-name macbook --nic net-name=private_network,tag=ricky", "removes": null, "creates": null, "chdir": null}}, "warnings": []}\r\n', 'OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016\r\ndebug1: Reading configuration data /home/rnoriega/.ssh/config\r\ndebug1: /home/rnoriega/.ssh/config line 7: Applying options for *\r\ndebug1: Reading configuration data /etc/ssh/ssh_config\r\ndebug1: /etc/ssh/ssh_config line 58: Applying options for *\r\ndebug1: auto-mux: Trying existing master\r\ndebug2: fd 3 setting O_NONBLOCK\r\ndebug2: mux_client_hello_exchange: master version 4\r\ndebug3: mux_client_forwards: request forwardings: 0 local, 0 remote\r\ndebug3: mux_client_request_session: entering\r\ndebug3: mux_client_request_alive: entering\r\ndebug3: mux_client_request_alive: done pid = 1349\r\ndebug3: mux_client_request_session: session request sent\r\ndebug1: mux_client_request_session: master session id: 2\r\ndebug3: mux_client_read_packet: read header failed: Broken pipe\r\ndebug2: Received exit status from master 0\r\nShared connection to 38.145.32.184 closed.\r\n')
+  1368 1497263164.28988: _low_level_execute_command() done: rc=0, stdout=
+{"changed": true, "end": "2017-06-12 10:26:04.168937", "stdout": "", "cmd": "nova boot PEPE4 --flavor m1.small --image CentOS-7-x86_64-GenericCloud-1703 --security-groups default,devel --key-name macbook --nic net-name=private_network,tag=ricky", "rc": 1, "start": "2017-06-12 10:26:03.873250", "stderr": "ERROR (CommandError): You must provide a username or user ID via --os-username, --os-user-id, env[OS_USERNAME] or env[OS_USER_ID]", "delta": "0:00:00.295687", "invocation": {"module_args": {"warn": true, "executable": null, "_uses_shell": true, "_raw_params": "nova boot PEPE4 --flavor m1.small --image CentOS-7-x86_64-GenericCloud-1703 --security-groups default,devel --key-name macbook --nic net-name=private_network,tag=ricky", "removes": null, "creates": null, "chdir": null}}, "warnings": []}
+, stderr=OpenSSH_7.2p2, OpenSSL 1.0.2j-fips  26 Sep 2016
+debug1: Reading configuration data /home/rnoriega/.ssh/config
+debug1: /home/rnoriega/.ssh/config line 7: Applying options for *
+debug1: Reading configuration data /etc/ssh/ssh_config
+debug1: /etc/ssh/ssh_config line 58: Applying options for *
+debug1: auto-mux: Trying existing master
+debug2: fd 3 setting O_NONBLOCK
+debug2: mux_client_hello_exchange: master version 4
+debug3: mux_client_forwards: request forwardings: 0 local, 0 remote
+debug3: mux_client_request_session: entering
+debug3: mux_client_request_alive: entering
+debug3: mux_client_request_alive: done pid = 1349
+debug3: mux_client_request_session: session request sent
+debug1: mux_client_request_session: master session id: 2
+debug3: mux_client_read_packet: read header failed: Broken pipe
+debug2: Received exit status from master 0
+Shared connection to 38.145.32.184 closed.
+  1368 1497263164.29009: done with _execute_module (command, {'_ansible_version': '2.3.1.0', '_uses_shell': True, '_ansible_no_log': False, '_ansible_module_name': u'command', u'_raw_params': u'nova boot PEPE4 --flavor m1.small --image CentOS-7-x86_64-GenericCloud-1703 --security-groups default,devel --key-name macbook --nic net-name=private_network,tag=ricky', '_ansible_verbosity': 4, '_ansible_syslog_facility': u'LOG_USER', '_ansible_socket': None, '_ansible_selinux_special_fs': [u'fuse', u'nfs', u'vboxsf', u'ramfs', u'9p'], '_ansible_diff': False, '_ansible_debug': True, '_ansible_check_mode': False})
+  1368 1497263164.29019: handler run complete
+  1368 1497263164.29025: attempt loop complete, returning result
+  1368 1497263164.29032: _execute() done
+  1368 1497263164.29034: dumping result to json
+  1368 1497263164.29040: done dumping result, returning
+  1368 1497263164.29049: done running TaskExecutor() for 38.145.32.184/TASK: rdocloud2 : Idem
+  1368 1497263164.29062: sending task result
+  1368 1497263164.29101: done sending task result
+  1368 1497263164.29106: WORKER PROCESS EXITING
+  1335 1497263164.29201: marking 38.145.32.184 as failed
+  1335 1497263164.29213: marking host 38.145.32.184 failed, current state: HOST STATE: block=2, task=2, rescue=0, always=0, run_state=ITERATING_TASKS, fail_state=FAILED_NONE, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+  1335 1497263164.29218: ^ failed state is now: HOST STATE: block=2, task=2, rescue=0, always=0, run_state=ITERATING_COMPLETE, fail_state=FAILED_TASKS, pending_setup=False, tasks child state? (None), rescue child state? (None), always child state? (None), did rescue? False, did start at task? False
+  1335 1497263164.29224: getting the next task for host 38.145.32.184
+  1335 1497263164.29228: host 38.145.32.184 is done iterating, returning
+fatal: [38.145.32.184]: FAILED! => {
+    "changed": true, 
+    "cmd": "nova boot PEPE4 --flavor m1.small --image CentOS-7-x86_64-GenericCloud-1703 --security-groups default,devel --key-name macbook --nic net-name=private_network,tag=ricky", 
+    "delta": "0:00:00.295687", 
+    "end": "2017-06-12 10:26:04.168937", 
+    "failed": true, 
+    "invocation": {
+        "module_args": {
+            "_raw_params": "nova boot PEPE4 --flavor m1.small --image CentOS-7-x86_64-GenericCloud-1703 --security-groups default,devel --key-name macbook --nic net-name=private_network,tag=ricky", 
+            "_uses_shell": true, 
+            "chdir": null, 
+            "creates": null, 
+            "executable": null, 
+            "removes": null, 
+            "warn": true
+        }
+    }, 
+    "rc": 1, 
+    "start": "2017-06-12 10:26:03.873250", 
+    "stderr": "ERROR (CommandError): You must provide a username or user ID via --os-username, --os-user-id, env[OS_USERNAME] or env[OS_USER_ID]", 
+    "stderr_lines": [
+        "ERROR (CommandError): You must provide a username or user ID via --os-username, --os-user-id, env[OS_USERNAME] or env[OS_USER_ID]"
+    ], 
+    "stdout": "", 
+    "stdout_lines": []
+}
+  1335 1497263164.29265: no more pending results, returning what we have
+  1335 1497263164.29269: results queue empty
+  1335 1497263164.29271: checking for any_errors_fatal
+  1335 1497263164.29276: done checking for any_errors_fatal
+  1335 1497263164.29278: checking for max_fail_percentage
+  1335 1497263164.29280: done checking for max_fail_percentage
+  1335 1497263164.29282: checking to see if all hosts have failed and the running result is not ok
+  1335 1497263164.29284: done checking to see if all hosts have failed
+  1335 1497263164.29285: getting the remaining hosts for this loop
+  1335 1497263164.29290: done getting the remaining hosts for this loop
+  1335 1497263164.29295: building list of next tasks for hosts
+  1335 1497263164.29297: getting the next task for host 38.145.32.184
+  1335 1497263164.29300: host 38.145.32.184 is done iterating, returning
+  1335 1497263164.29302: done building task lists
+  1335 1497263164.29303: counting tasks in each state of execution
+  1335 1497263164.29305: done counting tasks in each state of execution:
+	num_setups: 0
+	num_tasks: 0
+	num_rescue: 0
+	num_always: 0
+  1335 1497263164.29307: all hosts are done, so returning None's for all hosts
+  1335 1497263164.29310: done queuing things up, now waiting for results queue to drain
+  1335 1497263164.29312: results queue empty
+  1335 1497263164.29313: checking for any_errors_fatal
+  1335 1497263164.29315: done checking for any_errors_fatal
+  1335 1497263164.29316: checking for max_fail_percentage
+  1335 1497263164.29319: done checking for max_fail_percentage
+  1335 1497263164.29321: checking to see if all hosts have failed and the running result is not ok
+  1335 1497263164.29322: done checking to see if all hosts have failed
+  1335 1497263164.29326: getting the next task for host 38.145.32.184
+  1335 1497263164.29328: host 38.145.32.184 is done iterating, returning
+  1335 1497263164.29331: running handlers
+	to retry, use: --limit @/home/rnoriega/workspace/ansible-vnf/site.retry
+
+PLAY RECAP ****************************************************************************************************************************
+38.145.32.184              : ok=2    changed=1    unreachable=0    failed=1   
+
+  1335 1497263164.29407: RUNNING CLEANUP

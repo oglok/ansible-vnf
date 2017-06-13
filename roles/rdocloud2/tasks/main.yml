@@ -1,0 +1,9 @@
+---
+- name: Instantiate a VM into RDO cloud
+  shell: 'source /home/centos/openrc && nova boot vnf --flavor m1.small --image CentOS-7-x86_64-GenericCloud-1703 --security-groups default,devel --key-name macbook --nic net-name=private_network,tag=ricky --config-drive true'
+- pause:
+    seconds: 30
+- name: Floating IP
+  shell: 'source /home/centos/openrc && openstack server add floating ip vnf 38.145.33.98'
+- pause:
+    seconds: 10

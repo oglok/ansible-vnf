@@ -1,2 +1,7 @@
-[rdocloud]
-$IP ansible_user= ansible_ssh_pass=
+#[rdocloud]
+#locahost ansible_connection=local
+#38.145.32.184 ansible_user=centos
+[rdocloud2]
+38.145.32.184 ansible_user=centos
+[vnf]
+38.145.33.98 ansible_user=centos

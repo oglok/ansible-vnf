@@ -1,0 +1,13 @@
+---
+- hosts: rdocloud
+  roles:
+    - rdocloud
+  environment:
+    OS_COMPUTE_API_VERSION: 2.32
+    OS_DEBUG: 1
+- hosts: rdocloud2
+  roles:
+    - rdocloud2
+- hosts: vnf
+  roles:
+    - vnf

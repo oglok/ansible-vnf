@@ -1,0 +1,52 @@
+---
+- name: Create folder to mount config driver
+  file:
+    path: /mnt/config
+    state: directory
+    mode: u+rwx
+  become: true
+- name: Mounting config-drive
+  mount:
+    path: /mnt/config
+    src: /dev/disk/by-label/config-2
+    opts: ro
+    state: mounted
+    fstype: iso9660
+  become: true
+- name: Reading config-drive
+  shell: 'cat /mnt/config/openstack/latest/meta_data.json'
+  register: myvar
+- set_fact: mytag="{{myvar.stdout | from_json}}"
+- name: Writing udev rules
+  copy:
+    content: |
+      ACTION=="add", SUBSYSTEM=="net", KERNELS=="{{mytag['devices'][0]['address']}}", NAME="{{mytag['devices'][0]['tags'][0]}}"
+    dest: /etc/udev/rules.d/70-persistent-net.rules
+  become: true
+- name: Reconfigure interfaces
+  shell: 'udevadm control --reload'
+  become: true
+- name: Trigger udev adm  
+  shell: 'udevadm trigger --attr-match=subsystem=net'
+  become: true
+- name: Restart udev service
+  shell: 'systemctl restart systemd-udev-trigger.service'
+  become: true
+- name: Writing if config file
+  copy: remote_src=True src=/etc/sysconfig/network-scripts/ifcfg-eth0 dest="/etc/sysconfig/network-scripts/ifcfg-{{mytag['devices'][0]['tags'][0]}}"
+  become: true
+- name: Remove old
+  file: path=/etc/sysconfig/network-scripts/ifcfg-eth0 state=absent
+  become: true
+- name: Modify new config file
+  replace:
+    path: "/etc/sysconfig/network-scripts/ifcfg-{{mytag['devices'][0]['tags'][0]}}"
+    regexp: "eth0"
+    replace: "{{mytag['devices'][0]['tags'][0]}}"
+  become: true
+- name:
+  shell: shutdown -r -t 5
+  ignore_errors: true
+  async: 1
+  poll: 0
+  become: true

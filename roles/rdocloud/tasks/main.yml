@@ -1,0 +1,27 @@
+---
+- name: Instantiate a VM into RDO cloud
+  os_server:
+    state: present
+    auth:
+      auth_url: https://my.cloud.rdoproject.org:13000/v2.0
+      username: rnoriega
+      password: XXX
+      project_name: rnoriega
+    name: vnf
+    image: 8f41e8ce-cacc-4354-a481-9b9dba4f6de7
+    key_name: macbook
+    timeout: 200
+    flavor: m1.small
+    nics:
+      - net-id: 03e6710a-b448-4d30-aebf-904d9330ff1b
+      - tag: dataplane
+    network:
+      - net-id: 03e6710a-b448-4d30-aebf-904d9330ff1b
+      - tag: dataplane
+    floating_ips:
+      - 38.145.33.98
+    security_groups:
+      - default
+      - devel
+    config_drive: yes
+    wait: true
